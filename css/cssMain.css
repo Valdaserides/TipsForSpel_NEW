@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:700');
+
+main{
+
+    background: url("../imgs/header2.jpg") no-repeat center center; 
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.main-content{
+    
+    margin: auto;
+    width: 1000px;
+    height: 1000px;
+    background-color: rgba(50, 50, 50, .6);
+    
+}
+
+@media only screen and (max-width: 1016px){
+    
+    .main-content{
+        
+        width: 100%;
+        
+    }
+    
+}

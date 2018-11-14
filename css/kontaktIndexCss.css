@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:700');
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    
+}
+
+#mailFail{
+    
+    display: none;
+    
+}
+
+#mailSuccess{
+    
+    display: none;
+    
+}
+
+form{
+    
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    background-color: red;
+    
+}
+
+h2{
+    
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    
+}

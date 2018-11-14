@@ -1,0 +1,46 @@
+.main-content{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.tips{
+    
+    width: 300px;
+    height: 300px;
+    background-color: rgba(100,100,100,.8);
+    border: 1px solid;
+    
+}
+
+.tips:hover{
+    
+    box-shadow: 2px 2px 2px 2px rgb(0,0,0);
+    
+}
+
+.tips img{
+    
+    width: 300px;
+    height: 170px;
+    
+}
+
+.tips h2{
+    
+    padding: 5px;
+    font-family: 'Karla', sans-serif;
+    color: wheat;
+    
+}
+
+.tips p{
+    
+    font-family: 'Karla', sans-serif;
+    padding: 5px;
+    color: wheat;
+    
+}

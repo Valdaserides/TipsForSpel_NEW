@@ -58,16 +58,23 @@
 
         }
 
-        header h3 {
+        header h3 a{
 
             font-family: 'Dancing Script', cursive;
             font-size: 4em;
             position: absolute;
             left: 30px;
-            top: 20px;
+            top: 12px;
             color: lightgreen;
             text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+            text-decoration: none;
 
+        }
+        
+        header h3 a:hover{
+            
+            color: lightcoral;
+            
         }
 
         header nav .nav-menu {
@@ -84,14 +91,14 @@
             color: #000;
             text-transform: uppercase;
             font-family: 'Karla', sans-serif;
-            transition: .2s ease;
+            transition: .25s ease;
 
         }
 
         header nav .nav-menu li a:hover,
         header nav #dropdown li a:hover {
 
-            opacity: .1;
+            color: lightcoral;
 
         }
 
@@ -165,7 +172,7 @@
 
         @media only screen and (max-width: 1350px) {
 
-            header h3 {
+            header h3 a{
 
                 font-size: 2.5em;
                 top: 35px;
@@ -186,7 +193,7 @@
             }
 
 
-            header h3 {
+            header h3 a{
 
                 z-index: 0;
                 top: 0;
@@ -258,7 +265,7 @@
 
         @media only screen and (max-width: 500px) {
 
-            header h3 {
+            header h3 a{
 
                 left: 0;
                 left: 50%;
@@ -286,7 +293,7 @@
 
     <header>
 
-        <h3>Tips för spel</h3>
+        <h3><a href="hemIndex.php">Tips för spel</a></h3>
 
         <nav>
 

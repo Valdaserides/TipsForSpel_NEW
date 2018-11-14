@@ -138,9 +138,10 @@
             
             display: none;
             width: 100%;
-            height: 60px;
+            height: auto;
             background-color: green;
-            margin-bottom: 20px;
+            padding-top: 25px;
+            padding-bottom: 25px;
             
         }
         
@@ -236,7 +237,7 @@
 
                 <div id="success">
 
-                    <h3>Ditt speltips kommer nu ligger uppe! Tack!</h3>
+                    <h3>Ditt speltips kommer nu ligger uppe <a href="speltipsIndex.php">här</a>! Tack!</h3>
 
                 </div>
 
@@ -250,16 +251,16 @@
 
                     <p class="pBoxes">Ditt namn*:</p><input type="text" name="publicerare" class="boxes" required><br>
 
-                    <ul class="spel-selector" required>
-                        <li class="spel-selector-li"><img src="imgs/wowlogo.png" alt=""> <input type="radio" name="kategori" value="1"></li>
-                        <li class="spel-selector-li"><img src="imgs/lollogo.png" alt=""> <input type="radio" name="kategori" value="2"></li>
-                        <li class="spel-selector-li"><img src="imgs/csgologo.png" alt=""> <input type="radio" name="kategori" value="3"></li>
+                    <ul class="spel-selector">
+                        <li class="spel-selector-li"><img src="imgs/wowlogo.png" alt=""> <input type="radio" name="kategori" value="1" required></li>
+                        <li class="spel-selector-li"><img src="imgs/lollogo.png" alt=""> <input type="radio" name="kategori" value="2" required></li>
+                        <li class="spel-selector-li"><img src="imgs/csgologo.png" alt=""> <input type="radio" name="kategori" value="3" required></li>
                     </ul>
 
-                    <p class="pBoxes" required> Titel*: </p><input type="text" name="titel" class="boxes"><br>
+                    <p class="pBoxes"> Titel*: </p><input type="text" name="titel" class="boxes" required><br>
 
                     <div class="tips-holder">
-                        <p class="pTips">Tips*:</p><textarea name="text" class="tips-text" cols="70" rows="20"></textarea required><br>
+                        <p class="pTips">Tips*:</p><textarea name="text" class="tips-text" cols="70" rows="20" required></textarea><br>
                     </div>
 
                     <input type="file" name="uploaded_file" id="file-upload">

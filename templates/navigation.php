@@ -66,32 +66,32 @@
             left: 30px;
             top: 20px;
             color: lightgreen;
-            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+            text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
 
         }
 
         header nav .nav-menu {
 
             width: 600px;
+            align-items: center;
 
         }
 
         header nav .nav-menu li a,
         header nav #dropdown li a {
 
-            font-size: 22px;
-            letter-spacing: 1px;
+            font-size: 17px;
             color: #000;
             text-transform: uppercase;
             font-family: 'Karla', sans-serif;
-            transition: .1s ease;
+            transition: .2s ease;
 
         }
 
         header nav .nav-menu li a:hover,
         header nav #dropdown li a:hover {
 
-            opacity: .2;
+            opacity: .1;
 
         }
 

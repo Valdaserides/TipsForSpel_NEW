@@ -91,7 +91,7 @@
             color: #000;
             text-transform: uppercase;
             font-family: 'Karla', sans-serif;
-            transition: .25s ease;
+            transition: .15s ease;
 
         }
 
@@ -189,6 +189,7 @@
 
                 width: 100%;
                 padding: 0;
+                margin: 0;
 
             }
 
@@ -214,9 +215,11 @@
 
                 display: none;
                 height: auto;
-                width: 100%;
-                padding: 0;
-
+                
+            }
+            
+            header nav .nav-menu li a{
+                
             }
 
             .nav-menu li,
@@ -229,12 +232,11 @@
 
             #dropdown-content {
 
-                z-index: 0;
+                
                 position: relative;
-                box-shadow: none;
+                
                 margin: 0;
                 padding: 0;
-                border: none;
 
             }
 
@@ -247,7 +249,7 @@
             #dropdown-content li a {
                 padding: 0;
                 padding: 5px;
-                font-size: 10px;
+                font-size: 18px;
             }
 
             #dropdown:hover #dropdown-content {

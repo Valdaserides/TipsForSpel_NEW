@@ -10,6 +10,8 @@
         @import url('https://fonts.googleapis.com/css?family=Karla:700');
         @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
+        .no-border{}
+        
         .bar1,
         .bar2,
         .bar3 {
@@ -215,11 +217,21 @@
 
                 display: none;
                 height: auto;
+                width: 100%;
                 
             }
             
-            header nav .nav-menu li a{
+            header nav .nav-menu li{
                 
+                padding: 35px;
+                border-bottom: 1px solid;
+                
+            }
+            
+            header nav .nav-menu li a,
+        header nav #dropdown li a {
+                font-size: 30px;
+                padding: 15px;
             }
 
             .nav-menu li,

@@ -10,8 +10,28 @@
         @import url('https://fonts.googleapis.com/css?family=Karla:700');
         @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
-        .no-border{}
-        
+        #xd {
+
+            width: 100%;
+            height: 120px;
+            background-color: black;
+
+        }
+
+        .top-header {
+
+            height: 50px;
+            transition: height 2s ease;
+
+        }
+
+        .top-header-h3 {
+
+            font-size: 5px;
+            letter-spacing: 2px;
+
+        }
+
         .bar1,
         .bar2,
         .bar3 {
@@ -49,7 +69,10 @@
 
             display: flex;
             justify-content: space-between;
+            position: fixed;
             background-color: lightblue;
+            width: 100%;
+            z-index: 10;
 
         }
 
@@ -60,7 +83,7 @@
 
         }
 
-        header h3 a{
+        header h3 a {
 
             font-family: 'Dancing Script', cursive;
             font-size: 4em;
@@ -70,11 +93,11 @@
             text-decoration: none;
 
         }
-        
-        header h3 a:hover{
-            
+
+        header h3 a:hover {
+
             color: lightcoral;
-            
+
         }
 
         header nav .nav-menu {
@@ -91,7 +114,6 @@
             color: #000;
             text-transform: uppercase;
             font-family: 'Karla', sans-serif;
-            transition: .15s ease;
 
         }
 
@@ -137,7 +159,7 @@
             min-width: 160px;
             background-color: lightblue;
             list-style: none;
-            
+
             display: none;
 
         }
@@ -172,10 +194,10 @@
 
         @media only screen and (max-width: 1350px) {
 
-            header h3 a{
+            header h3 a {
 
                 font-size: 2.5em;
-                
+
 
             }
 
@@ -184,6 +206,12 @@
         }
 
         @media only screen and (max-width: 900px) {
+
+            #xd {
+
+                height: 60px;
+
+            }
 
             header nav {
 
@@ -194,7 +222,7 @@
             }
 
 
-            header h3 a{
+            header h3 a {
 
                 position: absolute;
                 z-index: 0;
@@ -217,18 +245,18 @@
                 display: none;
                 height: auto;
                 width: 100%;
-                
+
             }
-            
-            header nav .nav-menu li{
-                
+
+            header nav .nav-menu li {
+
                 padding: 35px;
                 border-bottom: 1px solid;
-                
+
             }
-            
+
             header nav .nav-menu li a,
-        header nav #dropdown li a {
+            header nav #dropdown li a {
                 font-size: 30px;
                 padding: 15px;
             }
@@ -243,9 +271,9 @@
 
             #dropdown-content {
 
-                
+
                 position: relative;
-                
+
                 margin: 0;
                 padding: 0;
 
@@ -278,7 +306,7 @@
 
         @media only screen and (max-width: 500px) {
 
-            header h3 a{
+            header h3 a {
 
                 left: 0;
                 left: 35%;
@@ -341,6 +369,8 @@
 
     </header>
 
+    <div id="xd"></div>
+
     <script>
         function myFunction(x) {
 
@@ -372,5 +402,25 @@
             $(".nav-menu").fadeToggle();
 
         });
+
+        if ($(window).width() > 899) {
+
+            $(window).on("scroll", function() {
+
+                if ($(window).scrollTop()) {
+
+                    $("header").addClass("top-header");
+                    $("header h3").addClass("top-header-h3");
+
+                } else {
+
+                    $("header").removeClass("top-header");
+                    $("header h3").removeClass("top-header-h3");
+
+                }
+
+            });
+
+        }
 
     </script>

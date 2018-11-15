@@ -10,6 +10,14 @@
         @import url('https://fonts.googleapis.com/css?family=Karla:700');
         @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
+        
+        * {
+
+            margin: 0;
+            padding: 0;
+
+        }
+        
         #xd {
 
             width: 100%;
@@ -20,14 +28,14 @@
 
         .top-header {
 
-            height: 50px;
-            transition: height 2s ease;
+            height: 60px;
+            transition: .5s ease;
 
         }
 
         .top-header-h3 {
 
-            font-size: 5px;
+            font-size: 11px;
             letter-spacing: 2px;
 
         }
@@ -58,53 +66,58 @@
             transform: rotate(45deg) translate(-8px, -8px);
         }
 
-        * {
-
-            margin: 0;
-            padding: 0;
-
-        }
-
         header {
 
-            display: flex;
-            justify-content: space-between;
             position: fixed;
             background-color: lightblue;
             width: 100%;
             z-index: 10;
+            height: 120px;
 
         }
 
         header nav {
 
-            top: 0;
-            padding: 30px;
-
+            width: 1000px;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            
         }
 
-        header h3 a {
+        header nav h3 a {
 
             font-family: 'Dancing Script', cursive;
-            font-size: 4em;
-            margin-left: 25px;
+            font-size: 3em;
             color: lightgreen;
             text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
             text-decoration: none;
 
         }
 
-        header h3 a:hover {
+        header nav h3 a:hover {
 
             color: lightcoral;
 
         }
 
         header nav .nav-menu {
-
-            width: 600px;
+            
+            justify-content: space-between;
+            width: 500px;
             align-items: center;
+            
+            margin-right: 0px;
 
+        }
+        
+        header nav .nav-menu li{
+            
+            padding: 0;
+            margin: 0;
+            
         }
 
         header nav .nav-menu li a,
@@ -159,7 +172,6 @@
             min-width: 160px;
             background-color: lightblue;
             list-style: none;
-
             display: none;
 
         }
@@ -170,7 +182,7 @@
             display: block;
             text-decoration: none;
             font-size: 22px;
-            padding: 15px;
+            padding: 10px;
 
         }
 
@@ -178,59 +190,51 @@
             display: block;
         }
 
-        .header-text {
-
-            padding: 35px;
-            font-size: 3em;
-            text-align: center;
-            background-color: lightgreen;
-            font-family: 'Karla', sans-serif;
-            color: white;
-            text-decoration: none;
-
-        }
-
         /* Responsive Design */
-
-        @media only screen and (max-width: 1350px) {
-
-            header h3 a {
-
-                font-size: 2.5em;
-
-
+        
+        @media only screen and (max-width: 1000px) {
+            
+            header nav h3 a{
+                
+                margin-left: 10px;
+                
             }
-
-            header nav {}
-
+            
+            header nav .nav-menu{
+                
+                margin-right: 15px;
+                
+            }
+            
         }
 
-        @media only screen and (max-width: 900px) {
+        @media only screen and (max-width: 850px) {
 
             #xd {
 
                 height: 60px;
 
             }
+            
+            header{
+                
+                height: auto;
+                
+            }
 
             header nav {
 
-                width: 100%;
+                display: block;
                 padding: 0;
                 margin: 0;
 
             }
-
-
-            header h3 a {
-
+            
+            header nav h3 a{
+                
                 position: absolute;
-                z-index: 0;
-                top: 0;
-                left: 0;
-                left: 55%;
-                top: 7px;
-
+                left: 50%;
+                
             }
 
             #respo-btn {
@@ -270,10 +274,8 @@
             }
 
             #dropdown-content {
-
-
+                
                 position: relative;
-
                 margin: 0;
                 padding: 0;
 
@@ -303,27 +305,14 @@
             }
 
         }
-
-        @media only screen and (max-width: 500px) {
-
-            header h3 a {
-
+        
+        @media only screen and (max-width: 540px) {
+            
+            header nav h3 a{
                 left: 0;
-                left: 35%;
-
+                left: 33%;
             }
-
-        }
-
-        @media only screen and (max-width: 400px) {
-
-            .header-text {
-
-                font-size: 2em;
-                padding: 10px;
-
-            }
-
+            
         }
 
     </style>
@@ -334,9 +323,9 @@
 
     <header>
 
-        <h3><a href="hemIndex.php">Tips för spel</a></h3>
-
         <nav>
+            
+            <h3><a href="hemIndex.php">Tips för spel</a></h3>
 
             <div id="respo-btn" onclick="myFunction(this)">
                 <div class="bar1"></div>
@@ -362,8 +351,6 @@
                 <li><a href="kontaktIndex.php" class="kontakt">Kontakt</a></li>
 
             </ul>
-
-
 
         </nav>
 

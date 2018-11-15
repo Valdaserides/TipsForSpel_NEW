@@ -48,7 +48,7 @@
         header {
 
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             background-color: lightblue;
 
         }
@@ -64,9 +64,7 @@
 
             font-family: 'Dancing Script', cursive;
             font-size: 4em;
-            position: absolute;
-            left: 30px;
-            top: 12px;
+            margin-left: 25px;
             color: lightgreen;
             text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
             text-decoration: none;
@@ -177,7 +175,7 @@
             header h3 a{
 
                 font-size: 2.5em;
-                top: 35px;
+                
 
             }
 
@@ -198,10 +196,11 @@
 
             header h3 a{
 
+                position: absolute;
                 z-index: 0;
                 top: 0;
                 left: 0;
-                left: 60%;
+                left: 55%;
                 top: 7px;
 
             }
@@ -282,7 +281,7 @@
             header h3 a{
 
                 left: 0;
-                left: 50%;
+                left: 35%;
 
             }
 

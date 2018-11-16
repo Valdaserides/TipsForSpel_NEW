@@ -11,6 +11,9 @@
         @import url('https://fonts.googleapis.com/css?family=Karla:700');
         @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
+        html{
+            scroll-behavior: smooth;
+        }
         
         * {
 
@@ -349,7 +352,7 @@
 
                 <li><a href="hemIndex.php">hem</a></li>
                 <div id="dropdown">
-                    <li><a id="dropbtn" href="speltipsIndex.php">Speltips</a><span id="dropbtnrespo">&#8711;</span></li>
+                    <li><a id="dropbtn" href="speltipsIndex.php">Speltips</a></li>
                     <ul id="dropdown-content">
 
                         <li><a href="csgoIndex.php">CS:GO Speltips</a></li>
@@ -410,11 +413,13 @@
 
                     $("header").addClass("top-header");
                     $("header h3").addClass("top-header-h3");
-
+                    $("#xd").css("height","60px");
+                      
                 } else {
 
                     $("header").removeClass("top-header");
                     $("header h3").removeClass("top-header-h3");
+                    $("#xd").css("height","");
 
                 }
 

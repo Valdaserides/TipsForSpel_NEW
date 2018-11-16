@@ -60,6 +60,7 @@
             border: 1px solid;
             margin-top: 15px;
             margin-bottom: 15px;
+            
 
         }
 
@@ -92,92 +93,50 @@
 
         }
         
-        .middle{
+        form{
             
-            transform: translate(-50%,-50%);
-            margin-top: 100px;
-            margin-left: 105%;
-
+            margin-top: 80px;
+            display: flex;
+            flex-direction: row;
+            
         }
         
-        .input{
+        input[type=text]{
             
-            width: 25px;
-            height: 25px;
-            background: none;
-            border-radius: 50%;
-            border: 2px solid #fff;
+            width: 130px;
             box-sizing: border-box;
-            outline: none;
-            transition: width .4s ease-in-out,
-                border-radius .8s ease-in-out,
-                padding 0.2s;
-            transition-delay: .1s;
-            color: white;
+            border: 1px solid;
+            border-radius: 2px;
             font-size: 16px;
+            background-color: white;
+            background-image: url('imgs/serachicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            transition: width .4s ease-in-out;
             
         }
         
-        .btn{
+        input[type=text]:focus{
+            width: 300px;
+        }
+        
+        input[type=submit]{
             
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            top: 0;
-            right: 0;
-            box-sizing: border-box;
-            background: none;
             border: none;
-            outline: none;
+            background-color: #4CAF50;
+            color: white;
+            font-weight: 700;
+            text-decoration: none;
+            width: 65px;
+            margin-left: 15px;
             cursor: pointer;
             
         }
         
-        .btn::before{
+        input[type=submit]:hover{
             
-            content: "";
-            width: 2px;
-            height: 15px;
-            background: white;
-            position: absolute;
-            transform: rotate(-45deg);
-            bottom: -4px;
-            right: -4px;
-            
-        }
-        
-        .inclicked{
-            
-            margin-top: 15px;
-            height: 30px;
-            width: 360px;
-            border-radius: 0;
-            padding: 0 15px;
-            
-        }
-        
-        .close::before, .close::after{
-            
-            content: "";
-            width: 3px;
-            height: 22px;
-            background: white;
-            position: absolute;
-            top: 18.5px;
-            bottom: 20px;
-            right: 28px;
-            
-        }
-        
-        .close::before{
-            
-            transform: rotate(-45deg);
-            
-        }
-        
-        .close::after{
-            
-            transform: rotate(45deg);
+            background-color: lightgreen;
             
         }
         
@@ -188,6 +147,16 @@
                 width: 100%;
                 
             }
+            
+        }
+        
+        @media only screen and (max-width: 380px) {
+            
+            
+            
+        input[type=text]:focus{
+            width: 130px;
+        }
             
         }
 
@@ -235,8 +204,9 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
                     <form action="speltipsIndex.php" class="search-box" method="get">
 
-                        <input type="text" class="input" name="search">
-                        <button type="button" class="btn" name="button"></button>
+                        <input type="text" class="input" name="search" placeholder="Sök efter publicerare, titel mm">
+                        <input type="submit" value="Sök" class="submit">
+                        <input type="submit" value="Visa alla">
 
                     </form>
 
@@ -247,30 +217,28 @@ mysqli_query($dbc,"SET NAMES UTF-8");
             <div class="all-tips">
 
                 <?php
-            
-                $query = "";
                 
-                if(!isset($_GET['search'])){
-                    $query = "SELECT * FROM speltips_alla";
-                }
-                else{
+                $query = "SELECT * FROM speltips_alla;";
+ 
+                if(isset($_GET['search'])){
                     
-                    $search = $_GET['search'];
-
-                    $query = "SELECT * FROM speltips_alla WHERE speltips_alla_publicerare LIKE '%$search%' OR speltips_alla_titel LIKE '%$search%'";
-                       
+                    $searchq = $_GET['search'];
+                    
+                    $searchq = preg_replace("#[^0-9a-ö]#i","",$searchq);
+                    
+                    $query = "SELECT * FROM speltips_alla WHERE speltips_alla_publicerare LIKE '%$searchq%' OR speltips_alla_titel LIKE '%$searchq%';";
+                    
                 }
                 
                 $result = mysqli_query($dbc,$query);
                 
                 if(!mysqli_fetch_array($result)){
+                    
                     echo "<p style='padding:50px; font-size:25px;color:white;'>Inga speltips hittades.</p>";
+                    
                 }
                 else{
-                
-                $n = 0;
                 while($row = mysqli_fetch_array($result)){
-                $n++;
             ?>
 
                 <div class="tips">
@@ -282,10 +250,10 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                         <?php echo $row['speltips_alla_publicerare']; ?>
                     </p>
                     <p>Spel: <a href="<?php echo $row['speltips_alla_spel']; ?>Index.php">
-                    <?php echo $row['speltips_alla_spel']; ?></a></p>
+                            <?php echo $row['speltips_alla_spel']; ?></a></p>
                 </div>
                 <?php
-                }
+                }  
                 }
                 ?>
             </div>

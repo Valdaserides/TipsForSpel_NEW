@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php $arr = array(); ?>
 <head>
     <meta charset="UTF-8">
     <title>Speltips</title>
@@ -46,7 +46,7 @@
             
             width: 100%;
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
             
@@ -140,6 +140,56 @@
             
         }
         
+        .tips-closed{
+            
+            padding: 50px;
+            height: auto;
+            width: 100%;
+            background-color: lightskyblue;
+            display: none;
+            position: fixed;
+            margin-top: -300px;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        
+        .tips-closed span{
+            
+            cursor: pointer;
+            display: inline-block;
+            margin-bottom: 20px;
+            margin-left: 30px;
+            
+        }
+
+        .tips-closed h2{
+            
+            font-family: 'Karla', sans-serif;
+            text-decoration: underline;
+            font-size: 2em;
+            
+        }
+        
+        .tips-closed h5{
+            
+            padding: 35px;
+            width: 50%;
+            border-bottom: 1px solid;
+            text-align: center;
+            
+        }
+        
+        .tips-closed p{
+            
+            width: 1000px;
+            padding-top: 25px;
+            font-family: 'Karla', sans-serif;
+            text-align: center;
+            overflow: inherit;
+            
+        }
+        
         @media only screen and (max-width: 900px) {
             
             .main-content{
@@ -148,9 +198,25 @@
                 
             }
             
+            .tips-closed h5{
+                
+                width: 75%;
+                
+            }
+            
         }
         
-        @media only screen and (max-width: 380px) {
+        @media only screen and (max-width: 550px) {
+            
+            .tips-closed h2{
+                
+                font-size: 1.5em;
+                
+            }
+            
+        }
+        
+        @media only screen and (max-width: 500px) {
             
             
             
@@ -174,6 +240,20 @@
             });
             
         });
+        
+        function showTips(x){
+            
+            var y = $(".tips-closed-" + x);
+            $(y).css("display","flex");
+            
+        }
+        
+        function hideTips(x){
+            
+            var y = $(".tips-closed-" + x);
+            y.css("display","none");
+            
+        }
 
         
     </script>
@@ -232,19 +312,25 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                 
                 $result = mysqli_query($dbc,$query);
                 
-                if(!mysqli_fetch_array($result)){
+                $arr = array();
+                $n = -1;
+                
+                if(mysqli_num_rows($result) <= 0){
                     
                     echo "<p style='padding:50px; font-size:25px;color:white;'>Inga speltips hittades.</p>";
                     
                 }
                 else{
                 while($row = mysqli_fetch_array($result)){
+                $n++;
+                $arr[$n] = $row['speltips_alla_id'];
+                
             ?>
 
                 <div class="tips">
-
+                    
                     <img src="imgs/<?php echo $row['speltips_alla_img_name'];?>">
-                    <h2><a href="https://www.google.se" target="_blank" style="color:blue;">
+                    <h2><a class="tips-click-<?php echo $arr[$n]; ?>" onclick="showTips(<?php echo $arr[$n]; ?>)" style="color:blue;text-decoration:underline;cursor:pointer;">
                             <?php echo $row['speltips_alla_titel']; ?></a></h2>
                     <p>Publicerare:
                         <?php echo $row['speltips_alla_publicerare']; ?>
@@ -252,8 +338,17 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                     <p>Spel: <a href="<?php echo $row['speltips_alla_spel']; ?>Index.php">
                             <?php echo $row['speltips_alla_spel']; ?></a></p>
                 </div>
+                <div class="tips-closed tips-closed-<?php echo $arr[$n]; ?>"> 
+                    
+                    <span onclick="hideTips(<?php echo $arr[$n]; ?>)">&#10006;</span>
+                    <h2> <?php echo $row["speltips_alla_titel"]; ?> </h2>
+                    <h5 style="border:none;padding:0;"><i>Spel: </i> <?php echo $row['speltips_alla_spel']; ?> </h5>
+                    <h5><i>Publicerat av: </i> <?php echo $row['speltips_alla_publicerare']; ?> </h5>
+                    <p> <?php echo $row['speltips_alla_text']; ?> </p>
+                  
+                </div>
                 <?php
-                }  
+                }
                 }
                 ?>
             </div>
@@ -265,7 +360,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
     <?php include('templates/footer.php'); ?>
 
     <?php
-
+    
         require("dbConnect.php");
 
     ?>

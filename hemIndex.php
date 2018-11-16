@@ -21,7 +21,6 @@
         <div class="main-content">
             
             
-            
         </div>
 
     </main>

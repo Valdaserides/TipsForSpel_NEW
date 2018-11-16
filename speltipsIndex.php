@@ -23,12 +23,13 @@
         .text {
             
             width: 100%;
-            height: 200px;
+            height: 150px;
+            padding: 50px;
             background-color: rgba(0, 0, 0, .2);
             display: flex;
             align-items: center;
-            justify-content: center;
-            border-bottom: 1px solid;
+            flex-direction: column;
+            border-bottom: 2px solid;
             
         }
 
@@ -94,9 +95,9 @@
         
         .middle{
             
-            margin-top: 170px;
-            margin-left: 970px;
             transform: translate(-50%,-50%);
+            margin-top: 100px;
+            margin-left: 105%;
 
         }
         
@@ -114,7 +115,7 @@
                 padding 0.2s;
             transition-delay: .1s;
             color: white;
-            font-size: 20px;
+            font-size: 16px;
             
         }
         
@@ -221,9 +222,11 @@
 
             <div class="text">
 
+               <h3>Tips för Spel</h3>
+               
                 <div class="middle">
 
-                    <form action="index.html" class="search-box" method="post">
+                    <form action="speltipsIndex.php" class="search-box" method="post">
 
                         <input type="text" class="input" name="">
                         <button type="button" class="btn" name="button"></button>

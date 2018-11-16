@@ -255,14 +255,14 @@
             header nav .nav-menu li {
 
                 padding: 35px;
-                border-bottom: 1px solid;
 
             }
 
             header nav .nav-menu li a,
             header nav #dropdown li a {
-                font-size: 30px;
-                padding: 15px;
+                
+                font-size: 22px;
+                
             }
 
             .nav-menu li,

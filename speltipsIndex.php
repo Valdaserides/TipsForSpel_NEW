@@ -25,7 +25,6 @@
             width: 100%;
             height: 150px;
             padding: 50px;
-            background-color: rgba(0, 0, 0, .2);
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -47,7 +46,7 @@
             
             width: 100%;
             display: flex;
-            flex-direction: row;
+            flex-direction: row-reverse;
             flex-wrap: wrap;
             justify-content: space-around;
             
@@ -212,6 +211,14 @@
 
 </head>
 
+<?php
+
+require("dbConnect.php");
+
+mysqli_query($dbc,"SET NAMES UTF-8");
+    
+?>
+
 <body>
 
     <?php include("templates/navigation.php"); ?>
@@ -222,13 +229,13 @@
 
             <div class="text">
 
-               <h3>Tips för Spel</h3>
-               
+                <h3>Tips för Spel</h3>
+
                 <div class="middle">
 
-                    <form action="speltipsIndex.php" class="search-box" method="post">
+                    <form action="speltipsIndex.php" class="search-box" method="get">
 
-                        <input type="text" class="input" name="">
+                        <input type="text" class="input" name="search">
                         <button type="button" class="btn" name="button"></button>
 
                     </form>
@@ -239,44 +246,48 @@
 
             <div class="all-tips">
 
+                <?php
+            
+                $query = "";
+                
+                if(!isset($_GET['search'])){
+                    $query = "SELECT * FROM speltips_alla";
+                }
+                else{
+                    
+                    $search = $_GET['search'];
+
+                    $query = "SELECT * FROM speltips_alla WHERE speltips_alla_publicerare LIKE '%$search%' OR speltips_alla_titel LIKE '%$search%'";
+                       
+                }
+                
+                $result = mysqli_query($dbc,$query);
+                
+                if(!mysqli_fetch_array($result)){
+                    echo "<p style='padding:50px; font-size:25px;color:white;'>Inga speltips hittades.</p>";
+                }
+                else{
+                
+                $n = 0;
+                while($row = mysqli_fetch_array($result)){
+                $n++;
+            ?>
+
                 <div class="tips">
 
-                    <img src="imgs/csgologo.png" alt="">
-                    <h2><a href="google.se">CSGO: Hur man får bättre FPS!</a></h2>
-                    <p>Publicerare: Max</p>
-
-                </div><div class="tips">
-
-                    <img src="imgs/csgologo.png" alt="">
-                    <h2><a href="google.se">CSGO: Hur man får bättre FPS!</a></h2>
-                    <p>Publicerare: Max</p>
-
-                </div><div class="tips">
-
-                    <img src="imgs/csgologo.png" alt="">
-                    <h2><a href="google.se">CSGO: Hur man får bättre FPS!</a></h2>
-                    <p>Publicerare: Max</p>
-
-                </div><div class="tips">
-
-                    <img src="imgs/csgologo.png" alt="">
-                    <h2><a href="google.se">CSGO: Hur man får bättre FPS!</a></h2>
-                    <p>Publicerare: Max</p>
-
-                </div><div class="tips">
-
-                    <img src="imgs/csgologo.png" alt="">
-                    <h2><a href="google.se">CSGO: Hur man får bättre FPS!</a></h2>
-                    <p>Publicerare: Max</p>
-
-                </div><div class="tips">
-
-                    <img src="imgs/csgologo.png" alt="">
-                    <h2><a href="google.se">CSGO: Hur man får bättre FPS!</a></h2>
-                    <p>Publicerare: Max</p>
-
+                    <img src="imgs/<?php echo $row['speltips_alla_img_name'];?>">
+                    <h2><a href="https://www.google.se" target="_blank" style="color:blue;">
+                            <?php echo $row['speltips_alla_titel']; ?></a></h2>
+                    <p>Publicerare:
+                        <?php echo $row['speltips_alla_publicerare']; ?>
+                    </p>
+                    <p>Spel: <a href="<?php echo $row['speltips_alla_spel']; ?>Index.php">
+                    <?php echo $row['speltips_alla_spel']; ?></a></p>
                 </div>
-
+                <?php
+                }
+                }
+                ?>
             </div>
 
         </div>
@@ -284,6 +295,12 @@
     </main>
 
     <?php include('templates/footer.php'); ?>
+
+    <?php
+
+        require("dbConnect.php");
+
+    ?>
 
 </body>
 

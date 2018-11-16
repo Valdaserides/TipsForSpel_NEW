@@ -294,7 +294,7 @@
 
     $dbc = mysqli_connect("localhost","root","","speltips");
 
-    mysqli_query($dbc, "SET NAMES UTF8");
+    
 
     if(isset($_POST['publicerare']) && isset($_POST['kategori']) && isset($_POST['titel']) && isset($_POST['text']) && isset($_POST['submit'])){
         
@@ -369,12 +369,13 @@
             $query = "INSERT INTO $kategoriVariabel ($speltips"."img_name,$speltips"."publicerare,$speltips"."spel,$speltips"."titel,$speltips"."text) VALUES ('$img','$publicerare','$spel','$titel','$tips');";
 
             if(mysqli_query($dbc,$query)){
-
+                mysqli_query($dbc,"SET NAMES UTF-8");
                 echo "<script> document.getElementById('success').style.display = 'block'; </script>";
 
                 $query2 = "INSERT INTO speltips_alla (speltips_alla_img_name,speltips_alla_publicerare,speltips_alla_spel,speltips_alla_titel,speltips_alla_text) VALUES ('$img','$publicerare','$spel','$titel','$tips');";
 
                 mysqli_query($dbc,$query2);
+                mysqli_query($dbc,"SET NAMES UTF-8");
 
             }
 

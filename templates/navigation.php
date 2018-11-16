@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/navigationCss.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -311,6 +312,17 @@
             header nav h3 a{
                 left: 0;
                 left: 33%;
+            }
+            
+        }
+        
+        @media only screen and (max-width: 380px) {
+            
+            header nav h3 a{
+                
+                top: 8px;
+                font-size: 2.3em;
+                
             }
             
         }

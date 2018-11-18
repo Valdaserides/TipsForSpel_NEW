@@ -58,9 +58,7 @@
             height: 300px;
             background-color: rgba(100, 100, 100, .8);
             border: 1px solid;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            
+            margin: 15px;
 
         }
 
@@ -190,7 +188,34 @@
             
         }
         
+        @media only screen and (max-width: 1000px) {
+            
+            .tips-closed{
+                
+                height: 500px;
+                
+            }
+            
+            .tips-closed p{
+                width: 90%;
+                overflow: scroll;
+            }
+            
+        }
+        
         @media only screen and (max-width: 900px) {
+            
+            .tips-closed{
+                
+                margin-top: -280px;
+                
+            }
+            
+            .tips-closed span{
+                
+                margin: 0;
+                
+            }
             
             .main-content{
                 
@@ -208,9 +233,19 @@
         
         @media only screen and (max-width: 550px) {
             
+            .tips-closed{
+                height: auto;
+            }
+            
             .tips-closed h2{
                 
                 font-size: 1.5em;
+                
+            }
+            
+            .tips-closed p{
+                
+                height: 150px;
                 
             }
             
@@ -357,7 +392,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
     </main>
 
-    <?php include('templates/footer.php'); ?>
+    
 
     <?php
     

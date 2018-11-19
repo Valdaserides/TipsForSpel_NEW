@@ -27,6 +27,16 @@
         
     }
     
+    @media only screen and(max-width: 1000px){
+        
+        footer nav .nav-menu{
+            
+            width: 100%;
+            
+        }
+        
+    }
+    
     
 </style>
 
@@ -58,8 +68,6 @@
                 <li><a href="kontaktIndex.php">Kontakt</a></li>
 
             </ul>
-
-
        
         </nav>
     

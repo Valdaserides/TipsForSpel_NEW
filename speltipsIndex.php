@@ -157,7 +157,6 @@
             cursor: pointer;
             display: inline-block;
             margin-bottom: 20px;
-            margin-left: 30px;
             
         }
 
@@ -396,6 +395,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
     <?php
     
+        include("templates/footer.php");
         require("dbConnect.php");
 
     ?>

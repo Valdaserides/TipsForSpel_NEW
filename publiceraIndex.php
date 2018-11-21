@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Publicera Speltips</title>
     <link rel="stylesheet" href="css/publiceraIndexCss.css">
     <link rel="stylesheet" href="css/cssMain.css">
 

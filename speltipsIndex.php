@@ -170,7 +170,7 @@
         
         .tips-closed h5{
             
-            padding: 35px;
+            padding: 5px;
             width: 50%;
             border-bottom: 1px solid;
             text-align: center;
@@ -316,7 +316,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
                 <div class="middle">
 
-                    <form action="speltipsIndex.php" class="search-box" method="get">
+                    <form class="search-box" method="get">
 
                         <input type="text" class="input" name="search" placeholder="Sök efter publicerare, titel mm">
                         <input type="submit" value="Sök" class="submit">

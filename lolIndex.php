@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/cssMain.css">
     
     <style>
-    
+        
         .main-content{
             
             height: auto;
@@ -15,7 +15,9 @@
         }
         
         .tips:hover {
+            
             cursor: default;
+            
         }
 
         .text {
@@ -27,6 +29,7 @@
             align-items: center;
             flex-direction: column;
             border-bottom: 2px solid;
+            margin-left: -50px;
             
         }
 

@@ -17,7 +17,9 @@
         }
         
         .tips:hover {
+            
             cursor: default;
+            
         }
 
         .text {

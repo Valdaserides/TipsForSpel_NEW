@@ -27,6 +27,7 @@
             align-items: center;
             flex-direction: column;
             border-bottom: 2px solid;
+            margin-left: -50px;
             
         }
 

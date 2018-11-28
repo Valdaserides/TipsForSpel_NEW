@@ -189,6 +189,14 @@
             
         }
         
+        .kryss{
+            
+            width: 100%;
+            margin-left: 55px;
+            margin-top: 20px;
+            
+        }
+        
         @media only screen and (max-width: 1000px) {
             
             .tips-closed{
@@ -376,7 +384,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                 </div>
                 <div class="tips-closed tips-closed-<?php echo $arr[$n]; ?>"> 
                     
-                    <span onclick="hideTips(<?php echo $arr[$n]; ?>)">&#10006;</span>
+                    <div class="kryss"> <span onclick="hideTips(<?php echo $arr[$n]; ?>)">&#10006;</span> </div>
                     <h2> <?php echo $row["speltips_alla_titel"]; ?> </h2>
                     <h5 style="border:none;padding:0;"><i>Spel: </i> <?php echo $row['speltips_alla_spel']; ?> </h5>
                     <h5><i>Publicerat av: </i> <?php echo $row['speltips_alla_publicerare']; ?> </h5>

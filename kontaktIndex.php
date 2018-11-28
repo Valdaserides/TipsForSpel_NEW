@@ -125,7 +125,7 @@
 
             <p> </p>
 
-            <form action="kontaktIndex.php">
+            <form action="kontaktIndex.php" method="post">
 
                 <h3 id="mailSuccess"> Din förfrågan har skickats. </h3>
                 <h3 id="mailFail"> Något gick fel. </h3>
@@ -134,7 +134,6 @@
                 <p> Din email </p> <input class="boxes" type="email" name="email" required>
                 <p> Meddelande </p> <textarea class="boxes" name="text" id="" cols="30" rows="10"></textarea><br>
                 <input type="submit" value="Skicka" id="submit">
-
 
             </form>
 
@@ -150,5 +149,32 @@
 
 <?php
 
+if(isset($_POST["namn"]) && isset($_POST["email"]) && isset($_POST["text"])){
+    
+    $to = "max.valdaseridesolofsson@elev.ga.ntig.se";
+    $subject = "Mail från mail-formuläret";
+
+
+    $name = $_POST["name"];
+    $mail = $_POST["email"];
+    $message = $_POST["text"];
+
+    $headers = "Från: " . $name . " Svara till: " . $mail;
+    
+    mail($to,$subject,$message,$headers);
+    
+}
 
 ?>
+
+
+
+
+
+
+
+
+
+
+
+

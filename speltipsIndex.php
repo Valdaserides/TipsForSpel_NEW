@@ -10,8 +10,10 @@
 
     <style>
 
+        <?php include("css/speltipsDatabase.css"); ?>  /* Includeing css for tips */
+        
         .main-content{
-            
+             
             height: auto;
             
         }
@@ -52,45 +54,6 @@
             flex-wrap: wrap;
             justify-content: space-around;
             
-        }
-
-        .tips {
-
-            width: 300px;
-            height: 300px;
-            background-color: rgba(100, 100, 100, .8);
-            border: 1px solid;
-            margin: 15px;
-
-        }
-
-        .tips:hover {
-
-            box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
-
-        }
-
-        .tips img {
-
-            width: 300px;
-            height: 170px;
-
-        }
-
-        .tips h2 {
-
-            padding: 5px;
-            font-family: 'Karla', sans-serif;
-            color: wheat;
-
-        }
-
-        .tips p {
-
-            font-family: 'Karla', sans-serif;
-            padding: 5px;
-            color: wheat;
-
         }
         
         form{
@@ -137,63 +100,6 @@
         input[type=submit]:hover{
             
             background-color: lightgreen;
-            
-        }
-        
-        .tips-closed{
-            
-            padding: 50px;
-            height: auto;
-            width: 100%;
-            background-color: lightskyblue;
-            display: none;
-            position: fixed;
-            margin-top: -300px;
-            align-items: center;
-            flex-direction: column;
-            
-        }
-        
-        .tips-closed span{
-            
-            cursor: pointer;
-            display: inline-block;
-            margin-bottom: 20px;
-            
-        }
-
-        .tips-closed h2{
-            
-            font-family: 'Karla', sans-serif;
-            text-decoration: underline;
-            font-size: 2em;
-            
-        }
-        
-        .tips-closed h5{
-            
-            padding: 5px;
-            width: 50%;
-            border-bottom: 1px solid;
-            text-align: center;
-            
-        }
-        
-        .tips-closed p{
-            
-            width: 1000px;
-            padding-top: 25px;
-            font-family: 'Karla', sans-serif;
-            text-align: center;
-            overflow: inherit;
-            
-        }
-        
-        .kryss{
-            
-            width: 100%;
-            margin-left: 55px;
-            margin-top: 20px;
             
         }
         
@@ -306,7 +212,7 @@
 
 <?php
 
-require("dbConnect.php");
+require("dbConnect.php"); // Requiring the database connection
 
 mysqli_query($dbc,"SET NAMES UTF-8");
     
@@ -342,32 +248,32 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
                 <?php
                 
-                $query = "SELECT * FROM speltips_alla;";
+                $query = "SELECT * FROM speltips_alla;"; // MySQL question
  
-                if(isset($_GET['search'])){
+                if(isset($_GET['search'])){ // Checking if the search box has been filled out
                     
-                    $searchq = $_GET['search'];
+                    $searchq = $_GET['search']; // Assigning the value of the search box to a varible
                     
                     $searchq = preg_replace("#[^0-9a-ö]#i","",$searchq);
                     
-                    $query = "SELECT * FROM speltips_alla WHERE speltips_alla_publicerare LIKE '%$searchq%' OR speltips_alla_titel LIKE '%$searchq%';";
+                    $query = "SELECT * FROM speltips_alla WHERE speltips_alla_publicerare LIKE '%$searchq%' OR speltips_alla_titel LIKE '%$searchq%';"; // Change the MySQL question to include the search
                     
                 }
                 
-                $result = mysqli_query($dbc,$query);
+                $result = mysqli_query($dbc,$query); // The result from the database in a varible
                 
-                $arr = array();
-                $n = -1;
+                $arr = array(); // Making an array to give all tips a unique classname
+                $n = -1; // Index for the array
                 
-                if(mysqli_num_rows($result) <= 0){
+                if(mysqli_num_rows($result) <= 0){ // Checking if the table is empty
                     
                     echo "<p style='padding:50px; font-size:25px;color:white;'>Inga speltips hittades.</p>";
                     
                 }
                 else{
-                while($row = mysqli_fetch_array($result)){
-                $n++;
-                $arr[$n] = $row['speltips_alla_id'];
+                while($row = mysqli_fetch_array($result)){ // Writing out everything from the database;
+                $n++; // Incrementing the index-array
+                $arr[$n] = $row['speltips_alla_id']; 
                 
             ?>
 
@@ -405,8 +311,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
     <?php
     
-        include("templates/footer.php");
-        require("dbConnect.php");
+        include("templates/footer.php"); // Including the footer
 
     ?>
 

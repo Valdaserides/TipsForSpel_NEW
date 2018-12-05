@@ -8,6 +8,8 @@
     
     <style>
     
+        <?php include("css/speltipsDataBase.css"); ?>
+        
         .main-content{
             
             height: auto;
@@ -49,45 +51,6 @@
             flex-wrap: wrap;
             justify-content: space-around;
             
-        }
-
-        .tips {
-
-            width: 300px;
-            height: 300px;
-            background-color: rgba(100, 100, 100, .8);
-            border: 1px solid;
-            margin: 15px;
-
-        }
-
-        .tips:hover {
-
-            box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
-
-        }
-
-        .tips img {
-
-            width: 300px;
-            height: 170px;
-
-        }
-
-        .tips h2 {
-
-            padding: 5px;
-            font-family: 'Karla', sans-serif;
-            color: wheat;
-
-        }
-
-        .tips p {
-
-            font-family: 'Karla', sans-serif;
-            padding: 5px;
-            color: wheat;
-
         }
         
         form{
@@ -137,125 +100,11 @@
             
         }
         
-        .tips-closed{
-            
-            padding: 50px;
-            height: auto;
-            width: 100%;
-            background-color: lightskyblue;
-            display: none;
-            position: fixed;
-            margin-top: -300px;
-            align-items: center;
-            flex-direction: column;
-            
-        }
-        
-        .tips-closed span{
-            
-            cursor: pointer;
-            display: inline-block;
-            margin-bottom: 20px;
-            
-        }
-
-        .tips-closed h2{
-            
-            font-family: 'Karla', sans-serif;
-            text-decoration: underline;
-            font-size: 2em;
-            
-        }
-        
-        .tips-closed h5{
-            
-            padding: 35px;
-            width: 50%;
-            border-bottom: 1px solid;
-            text-align: center;
-            
-        }
-        
-        .tips-closed p{
-            
-            width: 1000px;
-            padding-top: 25px;
-            font-family: 'Karla', sans-serif;
-            text-align: center;
-            overflow: inherit;
-            
-        }
-        
-        @media only screen and (max-width: 1000px) {
-            
-            .tips-closed{
-                
-                height: 500px;
-                
-            }
-            
-            .tips-closed p{
-                width: 90%;
-                overflow: scroll;
-            }
-            
-        }
-        
-        @media only screen and (max-width: 900px) {
-            
-            .tips-closed{
-                
-                margin-top: -280px;
-                
-            }
-            
-            .tips-closed span{
-                
-                margin: 0;
-                
-            }
-            
-            .main-content{
-                
-                width: 100%;
-                
-            }
-            
-            .tips-closed h5{
-                
-                width: 75%;
-                
-            }
-            
-        }
-        
-        @media only screen and (max-width: 550px) {
-            
-            .tips-closed{
-                height: auto;
-            }
-            
-            .tips-closed h2{
-                
-                font-size: 1.5em;
-                
-            }
-            
-            .tips-closed p{
-                
-                height: 150px;
-                
-            }
-            
-        }
-        
         @media only screen and (max-width: 500px) {
-            
-            
-            
-        input[type=text]:focus{
-            width: 130px;
-        }
+
+            input[type=text]:focus{
+                width: 130px;
+            }
             
         }
 
@@ -351,7 +200,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                 
                 if(mysqli_num_rows($result) <= 0){
                     
-                    echo "<p style='padding:50px; font-size:25px;color:white;'>Inga speltips hittades.</p>";
+                    echo "<p style='padding:50px; font-size:25px;color:white;'>Inga speltips hittades. Testa att söka i <a href='speltipsIndex.php'>alla tips.</a></p>";
                     
                 }
                 else{
@@ -374,7 +223,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                 </div>
                 <div class="tips-closed tips-closed-<?php echo $arr[$n]; ?>"> 
                     
-                    <span onclick="hideTips(<?php echo $arr[$n]; ?>)">&#10006;</span>
+                    <div class="kryss"> <span onclick="hideTips(<?php echo $arr[$n]; ?>)">&#10006;</span> </div>
                     <h2> <?php echo $row["speltips_csgo_titel"]; ?> </h2>
                     <h5 style="border:none;padding:0;"><i>Spel: </i> <?php echo $row['speltips_csgo_spel']; ?> </h5>
                     <h5><i>Publicerat av: </i> <?php echo $row['speltips_csgo_publicerare']; ?> </h5>

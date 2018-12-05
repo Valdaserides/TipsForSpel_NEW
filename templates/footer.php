@@ -116,5 +116,5 @@
 
    
     </div>
-    <p> <i> &copy;Copyright Max Valdaserides Olofsson </i> </p>
+    <p> <i> Copyright &copy; Max Valdaserides Olofsson </i> </p>
 </footer>

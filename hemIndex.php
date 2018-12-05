@@ -92,21 +92,44 @@
                 
                 <div id="latest-tips-container">
                     
-                    <div id="latest-tips-tips">
+                    
                         
+                        <?php
                         
+                        require("dbConnect.php");
+                        
+                        $query = "SELCET * FROM speltips_alla LIMIT 3";
+                        
+                        $result = mysqli_query($dbc,$query);
+                        
+                        $arr = array();
+                        $n = -1;
+                        
+                        if(mysqli_num_rows($result) <= 0){
+                            echo "<p style='padding:50px; font-size:25px;color:white;text-align:center;'>Inga speltips hittades.</p>";
+                        }
+                        
+                        else{
+                            
+                            while($row = mysqli_fetch_array($result)){
+                                
+                                $n++;
+                                $arr[$n] = $row['speltips_alla_id'];
+            
+                        ?>
                         
                     </div>
-                    
+                    <?php
+                        }
+                        }
+                    ?>
                 </div>
                 
             </div>
-            
-        </div>
 
     </main>
 
-    
+    <?php include("templates/footer.php"); ?>
 
 </body>
 

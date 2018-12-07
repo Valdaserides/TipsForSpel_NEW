@@ -77,13 +77,14 @@
             cursor: pointer;
             padding: 5px 15px;
             border: none;
+            transition: .2s ease;
             
         }
         
         .submit:hover{
             
-            color: grey;
-            
+            color: white;
+                        
         }
         
         .spel-selector{
@@ -101,7 +102,6 @@
             flex-direction: column;
             margin: 25px;
             margin-left: 27%;
-            
             
         }
         

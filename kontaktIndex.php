@@ -15,7 +15,6 @@
 
             margin: 0;
             padding: 0;
-            font-family: 'Karla', sans-serif;
 
         }
         
@@ -23,6 +22,7 @@
             
             height: auto;
             padding-bottom: 25px;
+            font-family: 'Karla', sans-serif;
             
         }
         
@@ -84,7 +84,7 @@
             
         }
 
-        h2{
+        main .main-content h2{
 
             font-size: 2.2em;
             padding: 20px;
@@ -167,15 +167,3 @@ if(isset($_POST["namn"]) && isset($_POST["email"]) && isset($_POST["text"])){
 }
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-

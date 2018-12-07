@@ -23,19 +23,23 @@
     
     .all-content{
         
-        width: 750px;
-        height: 500px;
+        width: 100%;
+        height: auto;
         margin: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
         
     }
     
     footer #info{
         
-        width: 200px;
-         
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
         
     }
     
@@ -46,34 +50,31 @@
         
     }
 
-    footer nav {
-
-        width: 200px;
-
-    }
-    
-    footer nav .nav-menu{
+    footer nav{
         
-        display: block;
-        width: 200px;
+        width: 375px;
+        height: auto;
         
     }
     
-    footer nav .nav-menu li{
+    footer nav ul{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        
+    }
+    
+    footer nav ul li{
         
         padding: 15px;
         
-        
-        
     }
 
-    @media only screen and(max-width: 1000px) {
+    @media only screen and(max-width: 750px) {
 
-        footer nav .nav-menu {
-
-            width: 100%;
-
-        }
+       
 
     }
 
@@ -98,23 +99,21 @@
 
         <nav>
 
-            <ul class="nav-menu">
-
+            <ul>
                 <li><a href="hemIndex.php">Hem</a></li>
-                    <li><a href="speltipsIndex.php">Alla speltips</a>        
-
-                        <li><a href="csgoIndex.php">CS:GO Speltips</a></li>
-                        <li><a href="wowIndex.php">WoW Speltips</a></li>
-                        <li><a href="lolIndex.php">LoL Speltips</a></li>                        
-
+                <li><a href="speltipsIndex.php">Alla speltips</a></li>
+                <li><a href="csgoIndex.php">CS:GO Speltips</a></li>
+                <li><a href="wowIndex.php">WoW Speltips</a></li>
+                <li><a href="lolIndex.php">LoL Speltips</a></li>
                 <li><a href="publiceraIndex.php">Publicera speltips</a></li>
                 <li><a href="kontaktIndex.php">Kontakt</a></li>
-
             </ul>
 
         </nav>
 
    
     </div>
+    
     <p> <i> Copyright &copy; Max Valdaserides Olofsson </i> </p>
+    
 </footer>

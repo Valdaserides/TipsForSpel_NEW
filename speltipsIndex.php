@@ -307,8 +307,6 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
     </main>
 
-    
-
     <?php
     
         include("templates/footer.php"); // Including the footer

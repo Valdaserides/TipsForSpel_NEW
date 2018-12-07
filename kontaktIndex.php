@@ -49,7 +49,8 @@
         .boxes{
             
             border-radius: 5px;
-            font-size: 1.3em;
+            font-size: 1.1em;
+            padding: 8px;
             
         }
         

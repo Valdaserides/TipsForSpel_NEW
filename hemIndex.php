@@ -11,12 +11,18 @@
     <link rel="stylesheet" href="css/cssMain.css">
 
     <style>
+        
+        .main-content{
+            
+            height: auto;
+            
+        }
+        
         .main-content h1 {
 
             font-size: 4em;
             color: white;
             text-align: center;
-
             padding: 35px;
 
         }
@@ -38,17 +44,6 @@
 
         }
 
-        #latest-tips {
-
-            width: 100%;
-            height: auto;
-            
-            margin-top: 50px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-
-        }
-
         #latest-tips > h2 {
 
             color: white;
@@ -65,7 +60,18 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            flex-wrap: wrap;
 
+        }
+        
+        @media only screen and (max-width: 1000px){
+            
+            .main-content{
+                
+                width: 100%;
+                
+            }
+            
         }
 
         <?php include("css/speltipsDatabase.css");

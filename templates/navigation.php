@@ -33,7 +33,7 @@
         .top-header {
 
             height: 60px;
-            transition: .5s ease;
+            transition: 1s ease;
 
         }
 

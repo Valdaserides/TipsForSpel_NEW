@@ -278,6 +278,7 @@
     <?php include("templates/footer.php"); ?>
 
     <script>
+        
         if ($(window).width() <= 701) {
             $('#file-upload').hide();
         } else if ($(window).window > 701) {
@@ -309,7 +310,7 @@
         else{
             
             $kategoriVariabel = "";
-            $img = "";
+            $img = "img/ingenbild.png";
 
             if(isset($img)){
 
@@ -328,7 +329,7 @@
 
                     else{
 
-                        $img = "ingenbild";
+                        $img = "ingenbild.png";
 
                     }
 

@@ -12,6 +12,8 @@
 
     <style>
         
+        <?php include("css/speltips.css"); ?>
+        
         .main-content{
             
             height: auto;

@@ -66,6 +66,10 @@
 
         }
         
+        .tips{
+            display: block;
+        }
+        
         @media only screen and (max-width: 1000px){
             
             .main-content{
@@ -90,6 +94,8 @@
                 $(".btn").toggleClass("close");
 
             });
+            
+             
 
         });
 

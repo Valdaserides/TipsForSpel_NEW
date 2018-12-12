@@ -23,6 +23,18 @@
                 
             });
             
+            $(".tips").slice(0,9).show();
+            
+            $("#loadMore").on("click",function(e){
+                
+                e.preventDefault();
+                $(".tips:hidden").slice(0,6).slideDown();
+                if($("#tips:hidden").length == 0){
+                    $("#loadMore").fadeOut("slow");
+                }
+                
+            });
+            
         });
         
         function showTips(x){
@@ -136,8 +148,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                 }
                 ?>
             </div>
-
-            
+            <a href="#" id="loadMore">Visa mer</a>            
         </div>
         
     </main>

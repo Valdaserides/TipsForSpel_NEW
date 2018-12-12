@@ -1,3 +1,9 @@
+.main-content {
+    
+    padding-bottom: 15px;
+    
+}
+
 .tips {
 
     width: 300px;
@@ -5,6 +11,7 @@
     background-color: rgba(100, 100, 100, .8);
     border: 1px solid;
     margin: 15px;
+    display: none;
 
 }
 
@@ -89,7 +96,7 @@
 .kryss {
 
     width: 100%;
-    
+
     margin-left: 60px;
     margin-top: 10px;
     position: absolute;
@@ -139,170 +146,196 @@
 
 }
 
-.main-content{
-             
-            height: auto;
-            
-        }
-        
-        .tips:hover {
-            
-            cursor: default;
-            
-        }
+.main-content {
 
-        .text {
-            
-            width: 100%;
-            height: 150px;
-            padding-bottom: 50px;
-            padding-top: 50px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            border-bottom: 2px solid;
-            
-        }
+    height: auto;
 
-        .text h3 {
-            
-            background-color: rgb(255, 255, 255,.5);
-            text-align: center;
-            color: white;
-            padding: 25px;
-            border-radius: 10px;
-            
-        }
+}
+
+.tips:hover {
+
+    cursor: default;
+
+}
+
+.text {
+
+    width: 100%;
+    height: 150px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px solid;
+
+}
+
+.text h3 {
+
+    background-color: rgb(255, 255, 255, .5);
+    text-align: center;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+
+}
+
+.all-tips {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+form {
+
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+input[type=text] {
+
+    width: 130px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 2px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('imgs/serachicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width .4s ease-in-out;
+
+}
+
+input[type=text]:focus {
+    width: 300px;
+}
+
+input[type=submit] {
+
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    width: 65px;
+    margin-left: 15px;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+
+    background-color: lightgreen;
+
+}
+
+#loadMore{
+    
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: lightcoral;
+    display: block;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Karla';
+    font-size: 1.3em;
+    transition: .2s ease-in-out;
+    width: 96.7%;
+    margin: auto;
+    
+}
+
+#loadMore:hover{
+    
+    opacity: .8;
+    
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .tips-closed {
+
+        height: 500px;
+
+    }
+
+    .tips-closed p {
         
-        .all-tips{
-            
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            
-        }
+        width: 90%;
+        overflow: scroll;
         
-        form{
-            
-            margin-top: 80px;
-            display: flex;
-            flex-direction: row;
-            
-        }
-        
-        input[type=text]{
-            
-            width: 130px;
-            box-sizing: border-box;
-            border: 1px solid;
-            border-radius: 2px;
-            font-size: 16px;
-            background-color: white;
-            background-image: url('imgs/serachicon.png');
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            padding: 12px 20px 12px 40px;
-            transition: width .4s ease-in-out;
-            
-        }
-        
-        input[type=text]:focus{
-            width: 300px;
-        }
-        
-        input[type=submit]{
-            
-            border: none;
-            background-color: #4CAF50;
-            color: white;
-            font-weight: 700;
-            text-decoration: none;
-            width: 65px;
-            margin-left: 15px;
-            cursor: pointer;
-            
-        }
-        
-        input[type=submit]:hover{
-            
-            background-color: lightgreen;
-            
-        }
-        
-        @media only screen and (max-width: 1000px) {
-            
-            .tips-closed{
-                
-                height: 500px;
-                
-            }
-            
-            .tips-closed p{
-                width: 90%;
-                overflow: scroll;
-            }
-            
-        }
-        
-        @media only screen and (max-width: 900px) {
-            
-            .tips-closed{
-                
-                margin-top: -280px;
-                
-            }
-            
-            .tips-closed span{
-                
-                margin: 0;
-                
-            }
-            
-            .main-content{
-                
-                width: 100%;
-                
-            }
-            
-            .tips-closed h5{
-                
-                width: 75%;
-                
-            }
-            
-        }
-        
-        @media only screen and (max-width: 550px) {
-            
-            .tips-closed{
-                height: auto;
-            }
-            
-            .tips-closed h2{
-                
-                font-size: 1.5em;
-                
-            }
-            
-            .tips-closed p{
-                
-                height: 150px;
-                
-            }
-            
-        }
-        
-        @media only screen and (max-width: 500px) {
-            
-            
-            
-        input[type=text]:focus{
-            width: 130px;
-        }
-            
-        }
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .tips-closed {
+
+        margin-top: -280px;
+
+    }
+
+    .tips-closed span {
+
+        margin: 0;
+
+    }
+
+    .main-content {
+
+        width: 100%;
+
+    }
+
+    .tips-closed h5 {
+
+        width: 75%;
+
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .tips-closed {
+        height: auto;
+    }
+
+    .tips-closed h2 {
+
+        font-size: 1.5em;
+
+    }
+
+    .tips-closed p {
+
+        height: 150px;
+
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+
+
+    input[type=text]:focus {
+        width: 130px;
+    }
+
+}
 
 @media only screen and (max-width: 550px) {
 

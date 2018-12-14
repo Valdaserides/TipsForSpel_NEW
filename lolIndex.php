@@ -5,6 +5,7 @@
     <title>Speltips - LoL</title>
     <link rel="stylesheet" href="css/csgoIndexCss.css">
     <link rel="stylesheet" href="css/cssMain.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
     <style>
         
@@ -23,13 +24,15 @@
                 
             });
             
-            $(".tips").slice(0,9).show();
-            
+           $(".tips").slice(0,9).show(); // For comments, check speltipsIndex.php
+            if($(".tips").length <= 9){
+               $("#loadMore").hide();
+            }
             $("#loadMore").on("click",function(e){
                 
                 e.preventDefault();
                 $(".tips:hidden").slice(0,6).slideDown();
-                if($("#tips:hidden").length == 0){
+                if($(".tips:hidden").length == 0){
                     $("#loadMore").fadeOut("slow");
                 }
                 

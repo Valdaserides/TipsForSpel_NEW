@@ -25,14 +25,18 @@
                 
             });
             
-            $(".tips").slice(0,9).show(); // Load more function
+            $(".tips").slice(0,9).show(); // Load more tips function
             
-            $("#loadMore").on("click",function(e){
+            if($(".tips").length <= 9){ // Checking if the page has less than or equal to 9
+                $("#loadMore").hide(); // And if it does, remove the loadMore button.
+            }
+            
+            $("#loadMore").on("click",function(e){ // Looking for clicking event
                 
                 e.preventDefault();
-                $(".tips:hidden").slice(0,6).slideDown();
-                if($("#tips:hidden").length == 0){
-                    $("#loadMore").fadeOut("slow");
+                $(".tips:hidden").slice(0,6).slideDown(); // Showing 6 more tips that has been hidden before, with the slideDown animation
+                if($(".tips:hidden").length == 0){ // If there is no more tips on the page
+                    $("#loadMore").fadeOut("slow"); // Remove the loadmore button
                 }
                 
             });

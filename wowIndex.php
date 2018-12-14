@@ -5,6 +5,7 @@
     <title>Speltips - WoW</title>
     <link rel="stylesheet" href="css/csgoIndexCss.css">
     <link rel="stylesheet" href="css/cssMain.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
     <style>
     
@@ -23,8 +24,10 @@
                 
             });
             
-            $(".tips").slice(0,9).show(); // Load more function
-            
+            $(".tips").slice(0,9).show(); // For comments, check speltipsIndex.php
+            if($(".tips").length <= 9){
+               $("#loadMore").hide();
+            }
             $("#loadMore").on("click",function(e){
                 
                 e.preventDefault();
@@ -74,7 +77,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
             
             <div class="text">
 
-                <h3>World of Warcraft, eller WoW för förkortning, är ett MMORPG spel.</h3>
+                <h3>World of Warcraft, eller WoW för förkortning, är ett MMORPG spel. WoW släpptes 2004 av Blizzard och förblir en av de populäraste spelen inom MMO-spel.</h3>
 
                 <div class="middle">
 

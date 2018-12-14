@@ -160,7 +160,7 @@
 
 .text {
 
-    width: 100%;
+    width: 85%;
     height: 150px;
     padding-bottom: 50px;
     padding-top: 50px;
@@ -168,6 +168,7 @@
     align-items: center;
     flex-direction: column;
     border-bottom: 2px solid;
+    margin: auto;
 
 }
 
@@ -176,7 +177,7 @@
     background-color: rgb(255, 255, 255, .5);
     text-align: center;
     color: white;
-    padding: 25px;
+    padding: 15px;
     border-radius: 10px;
 
 }

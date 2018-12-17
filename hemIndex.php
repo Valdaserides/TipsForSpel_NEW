@@ -79,6 +79,16 @@
             }
             
         }
+        
+        @media only screen and (max-width: 540px){
+            
+            .main-content h1 {
+                
+                font-size: 2.5em;
+                
+            }
+            
+        }
 
         <?php include("css/speltipsDatabase.css");
         ?>

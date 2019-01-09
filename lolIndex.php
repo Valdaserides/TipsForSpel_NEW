@@ -77,15 +77,15 @@ mysqli_query($dbc,"SET NAMES UTF-8");
             
             <div class="text">
 
-                <h3>Tips för Spel</h3>
+                <h3>League of Legends, eller LoL för förkortning, är världen största MOBA (Multiplayer online battle arena) spel. LoL släpptes 2009 och har stadigt ökat med spelare genom åren.</h3>
 
                 <div class="middle">
 
                     <form class="search-box" method="get">
 
                         <input type="text" class="input" name="search" placeholder="Sök efter publicerare, titel mm">
-                        <input type="submit" value="Sök" class="submit">
-                        <input type="submit" value="Visa alla">
+                        <input type="submit" value="Sök" class="">
+                        <a href="speltipsIndex.php" class="submit">Visa alla</a>
 
                     </form>
 
@@ -97,7 +97,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
                 <?php
                 
-                $query = "SELECT * FROM speltips_lol;";
+                $query = "SELECT * FROM speltips_lol order by speltips_lol_id desc;;";
  
                 if(isset($_GET['search'])){
                     

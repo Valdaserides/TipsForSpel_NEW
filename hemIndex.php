@@ -151,7 +151,7 @@
                         
                         require("dbConnect.php");
                         
-                        $query = "select * from speltips_alla order by speltips_alla_id desc limit 3;";
+                        $query = "select * from speltips_alla order by speltips_alla_id desc limit 3;"; // Query to select the 3 latest in the database.
                         
                         $result = mysqli_query($dbc,$query);
                         

@@ -87,8 +87,8 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                     <form class="search-box" method="get">
 
                         <input type="text" class="input" name="search" placeholder="Sök efter publicerare, titel mm">
-                        <input type="submit" value="Sök" class="submit">
-                        <input type="submit" value="Visa alla">
+                        <input type="submit" value="Sök" class="">
+                        <a href="speltipsIndex.php" class="submit">Visa alla</a>
 
                     </form>
 
@@ -100,7 +100,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
                 <?php
                 
-                $query = "SELECT * FROM speltips_alla;"; // MySQL question
+                $query = "select * from speltips_alla order by speltips_alla_id desc;"; // MySQL question
  
                 if(isset($_GET['search'])){ // Checking if the search box has been filled out
                     
@@ -108,7 +108,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                     
                     $searchq = preg_replace("#[^0-9a-ö]#i","",$searchq);
                     
-                    $query = "SELECT * FROM speltips_alla WHERE speltips_alla_publicerare LIKE '%$searchq%' OR speltips_alla_titel LIKE '%$searchq%';"; // Change the MySQL question to include the search
+                    $query = "SELECT * FROM speltips_alla WHERE speltips_alla_publicerare LIKE '%$searchq%' OR speltips_alla_titel LIKE '%$searchq%';"; // Change the MySQL question to include the search query
                     
                 }
                 

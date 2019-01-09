@@ -84,8 +84,8 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                     <form class="search-box" method="get">
 
                         <input type="text" class="input" name="search" placeholder="Sök efter publicerare, titel mm">
-                        <input type="submit" value="Sök" class="submit">
-                        <input type="submit" value="Visa alla">
+                        <input type="submit" value="Sök" class="">
+                        <a href="speltipsIndex.php" class="submit">Visa alla</a>
 
                     </form>
 
@@ -97,7 +97,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
                 <?php
                 
-                $query = "SELECT * FROM speltips_wow;";
+                $query = "SELECT * FROM speltips_wow order by speltips_wow_id desc;";
  
                 if(isset($_GET['search'])){
                     

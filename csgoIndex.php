@@ -77,15 +77,15 @@ mysqli_query($dbc,"SET NAMES UTF-8");
             
             <div class="text">
 
-                <h3>Tips för Spel</h3>
+                <h3>Counter Strike: Global Offensive, eller CSGO, är ett FPS (First person shooter) spel.</h3>
 
                 <div class="middle">
 
                     <form class="search-box" method="get">
 
                         <input type="text" class="input" name="search" placeholder="Sök efter publicerare, titel mm">
-                        <input type="submit" value="Sök" class="submit">
-                        <input type="submit" value="Visa alla">
+                        <input type="submit" value="Sök" class="">
+                        <a href="speltipsIndex.php" class="submit">Visa alla</a>
 
                     </form>
 
@@ -97,7 +97,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
                 <?php
                 
-                $query = "SELECT * FROM speltips_csgo;";
+                $query = "SELECT * FROM speltips_csgo order by speltips_csgo_id desc;;";
  
                 if(isset($_GET['search'])){
                     

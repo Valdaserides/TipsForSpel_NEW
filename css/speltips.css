@@ -233,10 +233,26 @@ input[type=submit] {
 
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, .submit:hover {
 
     background-color: lightgreen;
 
+}
+
+.submit{
+    
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    width: 65px;
+    margin-left: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 100;
+    padding-top: 15px;
+    
 }
 
 #loadMore{

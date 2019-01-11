@@ -9,7 +9,11 @@
     
     <style>
     
-        <?php include("css/speltips.css"); ?>
+        <?php include("css/speltips.css"); 
+        
+        // For comments, check speltipsIndex.php
+        
+        ?>
         
     </style>
     
@@ -85,7 +89,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
                         <input type="text" class="input" name="search" placeholder="Sök efter publicerare, titel mm">
                         <input type="submit" value="Sök" class="">
-                        <a href="speltipsIndex.php" class="submit">Visa alla</a>
+                        <a href="csgoIndex.php" class="submit">Visa alla</a>
 
                     </form>
 

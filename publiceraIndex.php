@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <title>Publicera speltips</title>
     <link rel="stylesheet" href="css/publiceraIndexCss.css">
-    <link rel="stylesheet" href="css/cssMain.css">
+    <link rel="stylesheet" href="css/cssMain.css"> 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <style>
+        
         @import url('https://fonts.googleapis.com/css?family=Karla:700');
 
-
-
-        .main-content {
+        .main-content { 
 
             margin: auto;
             width: 1000px;
@@ -34,7 +33,7 @@
 
         }
 
-        h2 {
+        .main-content > h2 {
 
             font-family: 'Karla';
             font-size: 2.2em;
@@ -293,43 +292,41 @@
 
 <?php
 
-    $dbc = mysqli_connect("localhost","root","","speltips");
+    $dbc = mysqli_connect("localhost","root","","speltips"); // Giving the variabel $dbc the connection to the database.
 
-    
-
-    if(isset($_POST['publicerare']) && isset($_POST['kategori']) && isset($_POST['titel']) && isset($_POST['text']) && isset($_POST['submit'])){
+    if(isset($_POST['publicerare']) && isset($_POST['kategori']) && isset($_POST['titel']) && isset($_POST['text']) && isset($_POST['submit'])){ // Checking so all the form inputs has been set.
         
-        $publicerare = $_POST['publicerare'];
+        $publicerare = $_POST['publicerare']; // Taking all the data of the input-tags and putting it into a variabel.
         $kategori = $_POST['kategori'];
         $titel = $_POST['titel'];
         $tips = $_POST['text'];
         
-        if(is_null($_POST['publicerare']) && is_null($_POST['kategori']) && is_null($_POST['titel']) && is_null($_POST['text'])){
+        if(is_null($_POST['publicerare']) && is_null($_POST['kategori']) && is_null($_POST['titel']) && is_null($_POST['text'])){ // Checking if the data is all input-elements is null
             echo "<script> document.getElementById('fail').style.display = 'block'; </script>";
         }
         else{
             
-            $kategoriVariabel = "";
-            $img = "img/ingenbild.png";
+            $kategoriVariabel = ""; // Setting the category-variabel to nothing.
+            $img = "img/ingenbild.png"; // Setting the default picture name
 
-            if(isset($img)){
+            if(isset($img)){ // If the user has uploaded a picture
 
-                $img = basename($_FILES['uploaded_file']['name']);
+                $img = basename($_FILES['uploaded_file']['name']); // Decalring some variables
                 $img_temp_name = $_FILES['uploaded_file']['tmp_name'];
 
-                if(!empty($img)){
+                if(!empty($img)){ // If the name of the $img is not null
 
-                    $path = "imgs/";
+                    $path = "imgs/"; // Declaring a varibel
 
-                    if(move_uploaded_file($img_temp_name,$path.$img)){
+                    if(move_uploaded_file($img_temp_name,$path.$img)){ // Checking if the picture could be uploaded
 
-                        $img = $_FILES['uploaded_file']['name'];
+                        $img = $_FILES['uploaded_file']['name']; // Then the picture name is saved to the variabel.
 
                     }
 
                     else{
 
-                        $img = "ingenbild.png";
+                        $img = "ingenbild.png"; // If not, the picture becomes the default name
 
                     }
 
@@ -339,13 +336,13 @@
 
             else{
 
-                $img = "ingenBild";
+                $img = "ingenBild"; // The  $img becomes the default picture
 
             }
 
-            if($kategori == 1){
+            if($kategori == 1){ // If the kategory radio-button is 1
 
-                $kategoriVariabel = "speltips_wow";
+                $kategoriVariabel = "speltips_wow"; // the category variabel is set to the speltips_wow table in the database.
                 $speltips = "speltips_wow_";
                 $spel = "WoW";
 

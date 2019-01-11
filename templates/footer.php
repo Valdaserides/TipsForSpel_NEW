@@ -30,12 +30,13 @@
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
+        padding-top: 30px;
         
     }
     
     footer #info{
         
-        width: 375px;
+        width: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -68,7 +69,19 @@
     
     footer nav ul li{
         
-        padding: 15px;
+        padding: 10px;
+        
+    }
+    
+    footer nav ul li a{
+        
+        color: black;
+        
+    }
+    
+    footer nav ul li a:hover{
+        
+        text-decoration: none;
         
     }
 
@@ -92,8 +105,8 @@
 
         <div id="info">
 
-           <h2><i>About</i></h2>
-            <h4> Tips för spel är för dig som  </h4>
+           <h2><i>Tips för spel är för dig som precis börjat spela ett spel och villa ha snabba tips för att komma igång!</i></h2>
+            
 
         </div>
 

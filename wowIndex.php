@@ -9,13 +9,17 @@
     
     <style>
     
-        <?php include("css/speltips.css"); ?>
+        <?php include("css/speltips.css"); 
+        
+        // For comments, check speltipsIndex.php
+        
+        ?>
         
     </style>
     
     <script>
 
-        $(document).ready(function(){
+        $(document).ready(function(){ /* For comments, look speltipsIndex.php */
             
             $(".btn").on("click",function(){
                 
@@ -85,7 +89,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
                         <input type="text" class="input" name="search" placeholder="Sök efter publicerare, titel mm">
                         <input type="submit" value="Sök" class="">
-                        <a href="speltipsIndex.php" class="submit">Visa alla</a>
+                        <a href="wowIndex.php" class="submit">Visa alla</a>
 
                     </form>
 

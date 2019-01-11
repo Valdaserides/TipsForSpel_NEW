@@ -16,12 +16,12 @@
 
     <script>
 
-        $(document).ready(function(){
+        $(document).ready(function(){ /* When the documents have loaded */
             
-            $(".btn").on("click",function(){
+            $(".btn").on("click",function(){ /* Look for click on btn event */
                 
-                $(".input").toggleClass("inclicked");
-                $(".btn").toggleClass("close");
+                $(".input").toggleClass("inclicked"); // Adding a class
+                $(".btn").toggleClass("close"); /* Toggeling a class */
                 
             });
             
@@ -43,14 +43,14 @@
             
         });
         
-        function showTips(x){
+        function showTips(x){ /* Function that is called when the users clicks on the a-tag in each tips. The x is a number  */
             
-            var y = $(".tips-closed-" + x);
-            $(y).css("display","flex");
+            var y = $(".tips-closed-" + x); // Saving the tips-classname in the varibel y.
+            $(y).css("display","flex"); // Giving the tips a display value of flex.
             
         }
         
-        function hideTips(x){
+        function hideTips(x){ /* Function that is called when the user presses the X to close tips. The x is a number. */
             
             var y = $(".tips-closed-" + x);
             y.css("display","none");
@@ -66,13 +66,13 @@
 
 require("dbConnect.php"); // Requiring the database connection
 
-mysqli_query($dbc,"SET NAMES UTF-8");
+mysqli_query($dbc,"SET NAMES UTF-8"); // Setting the character endoing to UTF-8.
     
 ?>
 
 <body>
 
-    <?php include("templates/navigation.php"); ?>
+    <?php include("templates/navigation.php"); // Including the navigation bar. ?>
 
     <main>
 
@@ -80,7 +80,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
             <div class="text">
 
-                <h3>Tips för Spel</h3>
+                <h3> Här hittar du alla speltips på hemsidan. </h3>
 
                 <div class="middle">
 
@@ -119,13 +119,13 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                 
                 if(mysqli_num_rows($result) <= 0){ // Checking if the table is empty
                     
-                    echo "<p style='padding:50px; font-size:25px;color:white;'>Inga speltips hittades.</p>";
+                    echo "<p style='padding:50px; font-size:25px;color:white;'>Inga speltips hittades.</p>"; // Writing out that there was no speltips found.
                     
                 }
                 else{
                 while($row = mysqli_fetch_array($result)){ // Writing out everything from the database;
                 $n++; // Incrementing the index-array
-                $arr[$n] = $row['speltips_alla_id']; 
+                $arr[$n] = $row['speltips_alla_id']; // The index of the array at index $n, is the same as the id in the database.
                 
             ?>
 
@@ -150,8 +150,8 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                   
                 </div>
                 <?php
-                }
-                }
+                } // Closing loop
+                } // Closing else
                 ?>
             </div>
             <a href="#" id="loadMore">Visa mer</a>

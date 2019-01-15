@@ -336,7 +336,7 @@
 
             else{
 
-                $img = "ingenBild"; // The  $img becomes the default picture
+                $img = "ingenbild.png"; // The  $img becomes the default picture
 
             }
 

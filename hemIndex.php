@@ -2,129 +2,160 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <title>Hem</title>
 
-    <link rel="stylesheet" href="css/hemIndexCss.css">
-    <link rel="stylesheet" href="css/cssMain.css">
-
     <style>
-        
-        <?php include("css/speltips.css"); ?>
-        
-        .main-content{
-            
-            height: auto;
-            
-        }
-        
-        .main-content h1 {
+        <?php include("css/speltips.css");
+        ?><?php include("css/speltipsDatabase.css");
 
+        ?>header {}
+
+        main {
+
+            height: auto;
+            width: 100%;
+
+        }
+
+        .parallax {
+
+            height: 100vh;
+            width: 100%;
+            background: url(imgs/header2.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 200px;
+
+        }
+
+        .parallax h1 {
+
+            text-align: center;
+            color: white;
+            padding-top: 15vh;
             font-size: 4em;
-            color: white;
-            text-align: center;
-            padding: 35px;
+            font-family: 'Karla';
 
         }
 
-        #hem-text {
+        .parallax h4 {
+
+            text-align: center;
+            color: white;
+            font-family: 'Karla';
+            font-size: 2em;
+
+        }
+
+        .parallax > a {
+
+            width: 36px;
+            height: 36px;
+            border: 1px solid white;
+            border-radius: 20px;
+            position: absolute;
+            right: 0;
+            left: 0;
+            margin: 0;
+            margin: auto;
+            top: 55%;
+            text-align: center;
+
+        }
+
+        .parallax a svg {
+
+            margin-top: 7px;
+            fill: white;
+
+        }
+
+        .main-content {
 
             height: auto;
-            margin-top: 25px;
-            padding: 15px;
+            background-color: rgba(0, 0, 0, .9);
 
         }
 
-        #hem-text p {
-
-            text-align: center;
-            color: antiquewhite;
-            font-family: 'Karla';
-            font-size: 1.4em;
-
-        }
-
-        #latest-tips > h2 {
-
-            color: white;
-            font-family: 'Karla';
-            text-align: center;
-            font-size: 1.1em;
-            padding: 5px;
-
-        }
-
-        #latest-tips-container {
+        #sections {
 
             width: 100%;
+            height: auto;
             display: flex;
-            flex-direction: row;
             justify-content: space-around;
+            flex-direction: row;
+            background-color: transparent;
             flex-wrap: wrap;
+            margin-top: 30vh;
+
+        }
+
+        #sections section {
+
+            width: 300px;
+            height: 350px;
+            background-color: lightblue;
+            padding: 7px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: 7px;
+
+        }
+
+        #sections section h2,
+        p {
+
+            text-align: center;
+            font-family: 'Karla';
+
+        }
+
+        #sections section img {
+
+            height: 150px;
+            width: 150px;
 
         }
         
-        .tips{
-            display: block;
-        }
-        
-        @media only screen and (max-width: 1000px){
+        #sections section > a{
             
-            .main-content{
-                
-                width: 100%;
-                
-            }
+            background-color: green;
+            padding: 5px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            border-radius: 15px;
+            transition: .2s ease-in-out;
             
         }
         
-        @media only screen and (max-width: 540px){
-            
-            .main-content h1 {
-                
-                font-size: 2.5em;
-                
-            }
-            
+        #sections section > a:hover{
+            background-color: darkgreen;
         }
-
-        <?php include("css/speltipsDatabase.css");
-        ?>
 
     </style>
-    
-    <script> // Script for toggeling 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
         $(document).ready(function() {
+            
+            var targetOffseT = $("#sections").offset().top - 150;
+            
+            $(".parallax > a").on("click", function() {
 
-            $(".btn").on("click", function() {
-
-                $(".input").toggleClass("inclicked");
-                $(".btn").toggleClass("close");
+                $('html, body').animate({
+                    scrollTop: targetOffseT }, 200);
 
             });
-            
-             
 
         });
 
-        function showTips(x) {
-
-            var y = $(".tips-closed-" + x);
-            $(y).css("display", "flex");
-
-        }
-
-        function hideTips(x) {
-
-            var y = $(".tips-closed-" + x);
-            y.css("display", "none");
-
-        }
-
     </script>
-    
+
 </head>
 
 <body>
@@ -133,89 +164,70 @@
 
     <main>
 
-        <div class="main-content">
+        <div class="parallax">
 
-            <h1>Välkommen till Tips för spel!</h1>
+            <h1>Välkommen till tips för spel!</h1>
+            <h4>Till dig som nybörjare</h4>
+            <a href="#"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                    <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" /></svg></a>
 
-            <div id="hem-text">
-                <p> Här kan du lära dig att bli bättre på ditt favoritspel eller själv lägga ut tips som gör andra spelare bättre. </p>
-            </div>
+            <div id="sections">
 
-            <div id="latest-tips">
+                <section>
 
-                <h2>Senaste tipsen från våra besökare:</h2>
+                    <img src="imgs/checkmark.png" alt="">
 
-                <div id="latest-tips-container">
+                    <h2>Kom igång med ditt nya spel!</h2>
 
-                    <?php
-                        
-                        require("dbConnect.php");
-                        
-                        $query = "select * from speltips_alla order by speltips_alla_id desc limit 3;"; // Query to select the 3 latest in the database.
-                        
-                        $result = mysqli_query($dbc,$query);
-                        
-                        $arr = array();
-                        $n = -1;
-                        
-                        if(mysqli_num_rows($result) <= 0){
-                            echo "<p style='padding:50px; font-size:25px;color:white;text-align:center;'>Inga speltips hittades.</p>";
-                        }
-                        
-                        else{
-                            
-                            while($row = mysqli_fetch_array($result)){
-                                
-                                $n++;
-                                $arr[$n] = $row['speltips_alla_id'];
-            
-                        ?>
-                    <div class="tips">
+                    <p>Tips för spel riktar sig mot dig som är nybörjare.</p>
+                    <a href="speltipsIndex.php">Läs mer</a>
 
-                        <img src="imgs/<?php echo $row['speltips_alla_img_name'];?>">
-                        <h2><a class="tips-click-<?php echo $arr[$n]; ?>" onclick="showTips(<?php echo $arr[$n]; ?>)" style="color:blue;text-decoration:underline;cursor:pointer;">
-                                <?php echo $row['speltips_alla_titel']; ?></a></h2>
-                        <p>Publicerare:
-                            <?php echo $row['speltips_alla_publicerare']; ?>
-                        </p>
-                        <p>Spel: <a href="<?php echo $row['speltips_alla_spel']; ?>Index.php">
-                                <?php echo $row['speltips_alla_spel']; ?></a></p>
-                    </div>
-                    <div class="tips-closed tips-closed-<?php echo $arr[$n]; ?>">
+                </section>
 
-                        <div class="kryss"> <span onclick="hideTips(<?php echo $arr[$n]; ?>)">&#10006;</span> </div>
-                        <h2>
-                            <?php echo $row["speltips_alla_titel"]; ?>
-                        </h2>
-                        <h5 style="border:none;padding:0;"><i>Spel: </i>
-                            <?php echo $row['speltips_alla_spel']; ?>
-                        </h5>
-                        <h5><i>Publicerat av: </i>
-                            <?php echo $row['speltips_alla_publicerare']; ?>
-                        </h5>
-                        <p>
-                            <?php echo $row['speltips_alla_text']; ?>
-                        </p>
+                <section>
 
-                    </div>
+                   <img src="imgs/2-512.png" alt="">
+                   
+                    <h2>Våra spel</h2>
 
-                    <?php
-                        }
-                        }
-                    ?>
+                    <p>För tillfället är det möjligt att se tips på tre spel; WoW, LoL och CSGO.</p>
+                    
+                    <a href="speltipsIndex.php">Läs mer</a>
 
-                </div>
+                </section>
+                <section>
 
-                <h2>Kolla ut ännu fler tips <a href="speltipsIndex.php" style="color:white;">här!</a></h2>
+                    <img src="imgs/thumb-up.png" alt="">
+
+                    <h2>Publicera dina egna tips!</h2>
+
+                    <p>Hjälp andra att också komma igång genom att publicera dina tips <a href="publiceraIndex.php">här.</a></p>
+                    
+                    <a href="publiceraIndex.php">Läs mer</a>
+
+                </section>
+                <section>
+
+                    <img src="imgs/5a461410d099a2ad03f9c998.png" alt="">
+
+                    <h2>Synpunkter på sidan?</h2>
+
+                    <p>Om du har synpunkter eller frågor om sidan kan du fylla i formuläret <a href="kontaktIndex.php">här.</a></p>
+                    
+                    <a href="kontaktIndex.php">Läs mer</a>
+
+                </section>
 
             </div>
 
         </div>
 
+        
+
     </main>
-
+    
     <?php include("templates/footer.php"); ?>
-
+    
 </body>
 
 </html>

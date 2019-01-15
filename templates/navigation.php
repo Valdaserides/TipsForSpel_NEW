@@ -355,6 +355,12 @@
             margin-top: 2px;
             
         }
+        
+        .scroll-up:hover{
+            
+            padding: 5px;
+            
+        }
 
     </style>
 

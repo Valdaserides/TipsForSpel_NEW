@@ -7,14 +7,20 @@
 
     <style>
         <?php include("css/speltips.css");
+        include("dbConnect.php");
         ?><?php include("css/speltipsDatabase.css");
 
         ?>header {}
 
         main {
 
-            height: auto;
             width: 100%;
+            background: url(imgs/header2.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 50px;
 
         }
 
@@ -50,7 +56,7 @@
 
         }
 
-        .parallax > a {
+        .parallax>a {
 
             width: 36px;
             height: 36px;
@@ -121,9 +127,9 @@
             width: 150px;
 
         }
-        
-        #sections section > a{
-            
+
+        #sections section>a {
+
             background-color: green;
             padding: 5px;
             text-decoration: none;
@@ -131,24 +137,74 @@
             font-size: 20px;
             border-radius: 15px;
             transition: .2s ease-in-out;
-            
+
         }
-        
-        #sections section > a:hover{
+
+        #sections section>a:hover {
+
             background-color: darkgreen;
+
+        }
+
+        .latest {
+
+            width: 100%;
+            height: 500px;
+            background-color: lightgreen;
+            margin-bottom: 200px;
+
+        }
+
+        @media only screen and (max-width: 1330px) {
+
+            .parallax {
+
+                height: auto;
+                padding: 0;
+                padding-bottom: 30px;
+
+            }
+
+        }
+
+        @media only screen and (max-width: 1000px) {
+
+            .parallax h1 {
+
+                font-size: 2.5em;
+
+            }
+
+        }
+
+        @media only screen and (max-width: 500px) {
+
+            .parallax h1 {
+
+                font-size: 2em;
+
+            }
+
+            .parallax h4 {
+
+                font-size: 1.5em;
+
+            }
+
         }
 
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-            
+
             var targetOffseT = $("#sections").offset().top - 150;
-            
+
             $(".parallax > a").on("click", function() {
 
                 $('html, body').animate({
-                    scrollTop: targetOffseT }, 200);
+                    scrollTop: targetOffseT
+                }, 200);
 
             });
 
@@ -186,12 +242,12 @@
 
                 <section>
 
-                   <img src="imgs/2-512.png" alt="">
-                   
+                    <img src="imgs/2-512.png" alt="">
+
                     <h2>Våra spel</h2>
 
                     <p>För tillfället är det möjligt att se tips på tre spel; WoW, LoL och CSGO.</p>
-                    
+
                     <a href="speltipsIndex.php">Läs mer</a>
 
                 </section>
@@ -202,7 +258,7 @@
                     <h2>Publicera dina egna tips!</h2>
 
                     <p>Hjälp andra att också komma igång genom att publicera dina tips <a href="publiceraIndex.php">här.</a></p>
-                    
+
                     <a href="publiceraIndex.php">Läs mer</a>
 
                 </section>
@@ -213,7 +269,7 @@
                     <h2>Synpunkter på sidan?</h2>
 
                     <p>Om du har synpunkter eller frågor om sidan kan du fylla i formuläret <a href="kontaktIndex.php">här.</a></p>
-                    
+
                     <a href="kontaktIndex.php">Läs mer</a>
 
                 </section>
@@ -222,12 +278,16 @@
 
         </div>
 
-        
+        <div class="latest">
+
+            
+
+        </div>
 
     </main>
-    
+
     <?php include("templates/footer.php"); ?>
-    
+
 </body>
 
 </html>

@@ -56,7 +56,7 @@
 
         }
 
-        .parallax>a {
+        .parallax > a {
 
             width: 36px;
             height: 36px;
@@ -128,14 +128,14 @@
 
         }
 
-        #sections section>a {
+        #sections section > a {
 
             background-color: green;
-            padding: 5px;
+            padding: 9px;
             text-decoration: none;
             color: white;
             font-size: 20px;
-            border-radius: 15px;
+            border-radius: 30px;
             transition: .2s ease-in-out;
 
         }
@@ -153,6 +153,14 @@
             background-color: lightgreen;
             margin-bottom: 200px;
 
+        }
+        
+        .latest h1{
+            
+            text-align: center;
+            font-family: 'Karla';
+            padding-top: 10px;
+            
         }
 
         @media only screen and (max-width: 1330px) {
@@ -280,7 +288,56 @@
 
         <div class="latest">
 
+            <h1> Senaste tipsen från våra tipsare! </h1>
             
+            <div class="all-tips">
+
+                <?php
+                
+                $query = "select * from speltips_alla order by speltips_alla_id desc limit 3;"; // MySQL question
+ 
+                $result = mysqli_query($dbc,$query); // The result from the database in a varible
+                
+                $arr = array(); // Making an array to give all tips a unique classname
+                $n = -1; // Index for the array
+                
+                if(mysqli_num_rows($result) <= 0){ // Checking if the table is empty
+                    
+                    echo "<p style='padding:50px; font-size:25px;color:white;'>Inga speltips hittades.</p>"; // Writing out that there was no speltips found.
+                    
+                }
+                else{
+                while($row = mysqli_fetch_array($result)){ // Writing out everything from the database;
+                $n++; // Incrementing the index-array
+                $arr[$n] = $row['speltips_alla_id']; // The index of the array at index $n, is the same as the id in the database.
+                
+            ?>
+
+                <div class="tips">
+                    
+                    <img src="imgs/<?php echo $row['speltips_alla_img_name'];?>">
+                    <h2><a class="tips-click-<?php echo $arr[$n]; ?>" onclick="showTips(<?php echo $arr[$n]; ?>)" style="color:blue;text-decoration:underline;cursor:pointer;">
+                            <?php echo $row['speltips_alla_titel']; ?></a></h2>
+                    <p>Publicerare:
+                        <?php echo $row['speltips_alla_publicerare']; ?>
+                    </p>
+                    <p>Spel: <a href="<?php echo $row['speltips_alla_spel']; ?>Index.php">
+                            <?php echo $row['speltips_alla_spel']; ?></a></p>
+                </div>
+                <div class="tips-closed tips-closed-<?php echo $arr[$n]; ?>"> 
+                    
+                    <div class="kryss"> <span onclick="hideTips(<?php echo $arr[$n]; ?>)">&#10006;</span> </div>
+                    <h2> <?php echo $row["speltips_alla_titel"]; ?> </h2>
+                    <h5 style="border:none;padding:0;"><i>Spel: </i> <?php echo $row['speltips_alla_spel']; ?> </h5>
+                    <h5><i>Publicerat av: </i> <?php echo $row['speltips_alla_publicerare']; ?> </h5>
+                    <p> <?php echo $row['speltips_alla_text']; ?> </p>
+                  
+                </div>
+                <?php
+                } // Closing loop
+                } // Closing else
+                ?>
+            </div>
 
         </div>
 

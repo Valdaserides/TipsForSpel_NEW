@@ -34,7 +34,7 @@
 
             height: 60px;
             transition: .5s ease-in-out;
-            box-shadow: 0 8px 20px 2px #000;
+            box-shadow: 0 8px 10px -6px #000;
 
         }
 

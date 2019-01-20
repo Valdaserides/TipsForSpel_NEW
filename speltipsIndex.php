@@ -129,7 +129,7 @@ mysqli_query($dbc,"SET NAMES UTF-8"); // Setting the character endoing to UTF-8.
                 
             ?>
 
-                <div class="tips">
+                <a class="tips-click-<?php echo $arr[$n]; ?>" onclick="showTips(<?php echo $arr[$n]; ?>)"><div class="tips">
                     
                     <img src="imgs/<?php echo $row['speltips_alla_img_name'];?>">
                     <h2><a class="tips-click-<?php echo $arr[$n]; ?>" onclick="showTips(<?php echo $arr[$n]; ?>)" style="color:blue;text-decoration:underline;cursor:pointer;">
@@ -139,7 +139,7 @@ mysqli_query($dbc,"SET NAMES UTF-8"); // Setting the character endoing to UTF-8.
                     </p>
                     <p>Spel: <a href="<?php echo $row['speltips_alla_spel']; ?>Index.php">
                             <?php echo $row['speltips_alla_spel']; ?></a></p>
-                </div>
+                </div></a>
                 <div class="tips-closed tips-closed-<?php echo $arr[$n]; ?>"> 
                     
                     <div class="kryss"> <span onclick="hideTips(<?php echo $arr[$n]; ?>)">&#10006;</span> </div>

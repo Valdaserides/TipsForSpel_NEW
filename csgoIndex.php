@@ -81,13 +81,13 @@ mysqli_query($dbc,"SET NAMES UTF-8");
             
             <div class="text">
 
-                <h3>Counter Strike: Global Offensive, eller CSGO, är ett FPS (First person shooter) spel.</h3>
+                <h3> Counter Strike: Global Offensive, eller CSGO, är ett FPS (First person shooter) spel. Det släpptes 2012 av Valve. </h3>
 
                 <div class="middle">
 
                     <form class="search-box" method="get">
 
-                        <input type="text" class="input" name="search" placeholder="Sök efter publicerare, titel mm">
+                        <input type="text" class="input" name="search" placeholder="Sök efter publicerare eller titel">
                         <input type="submit" value="Sök" class="">
                         <a href="csgoIndex.php" class="submit">Visa alla</a>
 
@@ -120,7 +120,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                 
                 if(mysqli_num_rows($result) <= 0){
                     
-                    echo "<p style='padding:50px; font-size:25px;color:white;'>Inga speltips hittades. Testa att söka i <a href='speltipsIndex.php'>alla tips.</a></p>";
+                    echo "<p style='padding:50px; font-size:25px; color:white;'>Inga speltips hittades. Testa att söka i <a href='speltipsIndex.php' style='color:white;'>alla tips.</a></p>";
                     
                 }
                 else{

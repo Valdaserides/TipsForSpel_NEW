@@ -6,11 +6,11 @@
     <title>Hem</title>
 
     <style>
-        <?php include("css/speltips.css");
-        include("dbConnect.php");
-        ?><?php include("css/speltipsDatabase.css");
-
-        ?>header {}
+        
+        <?php include("css/speltips.css"); ?>  /* Includeing css for tips */
+        <?php include("dbConnect.php"); ?>
+        
+        header {}
 
         main {
 
@@ -149,9 +149,10 @@
         .latest {
 
             width: 100%;
-            height: 500px;
+            height: auto;
             background-color: lightgreen;
             margin-bottom: 200px;
+            padding-bottom: 50px;
 
         }
         
@@ -160,6 +161,14 @@
             text-align: center;
             font-family: 'Karla';
             padding-top: 10px;
+            
+        }
+        
+        .latest h3{
+            
+            font-family: 'Karla';
+            text-align: center;
+            margin-top: 30px;
             
         }
 
@@ -290,7 +299,7 @@
 
             <h1> Senaste tipsen från våra tipsare! </h1>
             
-            <div class="all-tips">
+            <div class="all-tips" style="justify-content:center;">
 
                 <?php
                 
@@ -313,7 +322,7 @@
                 
             ?>
 
-                <div class="tips">
+                <div class="tips" style="display:block;">
                     
                     <img src="imgs/<?php echo $row['speltips_alla_img_name'];?>">
                     <h2><a class="tips-click-<?php echo $arr[$n]; ?>" onclick="showTips(<?php echo $arr[$n]; ?>)" style="color:blue;text-decoration:underline;cursor:pointer;">
@@ -338,7 +347,7 @@
                 } // Closing else
                 ?>
             </div>
-
+            <h3> Kolla ännu mer tips <a href="speltipsIndex.php">här!</a> </h3>
         </div>
 
     </main>

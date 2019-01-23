@@ -359,7 +359,7 @@
         
         .scroll-up:hover{
             
-            padding: 5px;
+            opacity: .7;
             
         }
 

@@ -121,7 +121,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                 
                 if(mysqli_num_rows($result) <= 0){
                     
-                    echo "<p style='padding:50px; font-size:25px;color:white;'>Inga speltips hittades. Testa att söka i <a href='speltipsIndex.php'>alla tips.</a></p>";
+                    echo "<p style='padding:50px; font-size:25px;color:white;'>Inga speltips hittades. Testa att söka i <a href='speltipsIndex.php' style='color:white;'>alla tips.</a></p>";
                     
                 }
                 else{

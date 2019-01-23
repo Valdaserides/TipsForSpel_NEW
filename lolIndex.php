@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Speltips - LoL</title>
     <link rel="stylesheet" href="css/csgoIndexCss.css">
     <link rel="stylesheet" href="css/cssMain.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+
     <style>
-        
+
         <?php include("css/speltips.css"); 
         
         // For comments, check speltipsIndex.php
@@ -17,7 +18,7 @@
         ?>
         
     </style>
-    
+
     <script>
 
         $(document).ready(function(){
@@ -61,7 +62,7 @@
 
         
     </script>
-    
+
 </head>
 
 <?php
@@ -73,13 +74,13 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 ?>
 
 <body>
-    
+
     <?php include("templates/navigation.php"); ?>
-    
+
     <main>
-        
+
         <div class="main-content">
-            
+
             <div class="text">
 
                 <h3>League of Legends, eller LoL för förkortning, är världen största MOBA (Multiplayer online battle arena) spel. LoL släpptes 2009 och har stadigt ökat med spelare genom åren.</h3>
@@ -131,53 +132,48 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                 
             ?>
 
-                <div class="tips">
-                    
-                    <img src="imgs/<?php echo $row['speltips_lol_img_name'];?>">
-                    <h2><a class="tips-click-<?php echo $arr[$n]; ?>" onclick="showTips(<?php echo $arr[$n]; ?>)" style="color:blue;text-decoration:underline;cursor:pointer;">
-                            <?php echo $row['speltips_lol_titel']; ?></a></h2>
-                    <p>Publicerare:
-                        <?php echo $row['speltips_lol_publicerare']; ?>
-                    </p>
-                    <p>Spel: <a href="<?php echo $row['speltips_lol_spel']; ?>Index.php">
-                            <?php echo $row['speltips_lol_spel']; ?></a></p>
-                </div>
-                <div class="tips-closed tips-closed-<?php echo $arr[$n]; ?>"> 
-                    
+                <a class="tips-click-<?php echo $arr[$n]; ?>" onclick="showTips(<?php echo $arr[$n]; ?>)">
+                    <div class="tips">
+
+                        <img src="imgs/<?php echo $row['speltips_lol_img_name'];?>" class="pointer">
+                        <h2><a class="tips-click-<?php echo $arr[$n]; ?>" onclick="showTips(<?php echo $arr[$n]; ?>)" style="color:blue;text-decoration:underline;cursor:pointer;">
+                                <?php echo $row['speltips_lol_titel']; ?></a></h2>
+                        <p>Publicerare:
+                            <?php echo $row['speltips_lol_publicerare']; ?>
+                        </p>
+                        <p>Spel: <a href="<?php echo $row['speltips_lol_spel']; ?>Index.php">
+                                <?php echo $row['speltips_lol_spel']; ?></a></p>
+                    </div>
+                </a>
+                <div class="tips-closed tips-closed-<?php echo $arr[$n]; ?>">
+
                     <div class="kryss"><span onclick="hideTips(<?php echo $arr[$n]; ?>)">&#10006;</span></div>
-                    <h2> <?php echo $row["speltips_lol_titel"]; ?> </h2>
-                    <h5 style="border:none;padding:0;"><i>Spel: </i> <?php echo $row['speltips_lol_spel']; ?> </h5>
-                    <h5><i>Publicerat av: </i> <?php echo $row['speltips_lol_publicerare']; ?> </h5>
-                    <p> <?php echo $row['speltips_lol_text']; ?> </p>
-                  
+                    <h2>
+                        <?php echo $row["speltips_lol_titel"]; ?>
+                    </h2>
+                    <h5 style="border:none;padding:0;"><i>Spel: </i>
+                        <?php echo $row['speltips_lol_spel']; ?>
+                    </h5>
+                    <h5><i>Publicerat av: </i>
+                        <?php echo $row['speltips_lol_publicerare']; ?>
+                    </h5>
+                    <p>
+                        <?php echo $row['speltips_lol_text']; ?>
+                    </p>
+
                 </div>
                 <?php
                 }
                 }
                 ?>
             </div>
-            <a href="#" id="loadMore">Visa mer</a>            
+            <a href="#" id="loadMore">Visa mer</a>
         </div>
-        
+
     </main>
-    
+
     <?php include("templates/footer.php"); ?>
-    
+
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

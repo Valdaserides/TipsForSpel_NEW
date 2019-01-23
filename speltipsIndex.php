@@ -131,7 +131,7 @@ mysqli_query($dbc,"SET NAMES UTF-8"); // Setting the character endoing to UTF-8.
 
                 <a class="tips-click-<?php echo $arr[$n]; ?>" onclick="showTips(<?php echo $arr[$n]; ?>)"><div class="tips">
                     
-                    <img src="imgs/<?php echo $row['speltips_alla_img_name'];?>">
+                    <img src="imgs/<?php echo $row['speltips_alla_img_name'];?>" class="pointer">
                     <h2><a class="tips-click-<?php echo $arr[$n]; ?>" onclick="showTips(<?php echo $arr[$n]; ?>)" style="color:blue;text-decoration:underline;cursor:pointer;">
                             <?php echo $row['speltips_alla_titel']; ?></a></h2>
                     <p>Publicerare:

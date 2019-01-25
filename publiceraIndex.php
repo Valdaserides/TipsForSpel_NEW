@@ -74,23 +74,22 @@
             text-decoration: none;
             font-size: 16px;
             cursor: pointer;
-            padding: 5px 15px;
+            padding: 7px 20px;
             border: none;
-            transition: .2s ease;
+            transition: .2s ease-in-out;
             
         }
         
         .submit:hover{
             
-            color: white;
-                        
+            border-radius: 20px;
+            
         }
         
         .spel-selector{
             
             list-style: none;
             display: flex;
-            
             flex-direction: row;
             
         }

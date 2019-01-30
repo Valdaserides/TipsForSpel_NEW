@@ -41,6 +41,8 @@
         flex-direction: column;
         align-items: center;
         height: auto;
+        text-align: center;
+        padding-bottom: 50px;
         
     }
     
@@ -87,17 +89,10 @@
 
     @media only screen and(max-width: 750px) {
 
-       
 
     }
 
 </style>
-
-<script>
-
-    
-
-</script>
 
 <footer>
 
@@ -127,6 +122,6 @@
    
     </div>
     
-    <p> <i> Copyright &copy; Max Valdaserides Olofsson </i> </p>
+    <p> <i> Copyright &copy; Tips För Spel </i> </p>
     
 </footer>

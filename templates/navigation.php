@@ -315,8 +315,10 @@
         @media only screen and (max-width: 540px) {
             
             header nav h3 a{
+                
                 left: 0;
                 left: 33%;
+                
             }
             
         }

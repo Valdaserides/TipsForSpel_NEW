@@ -71,8 +71,8 @@
             margin: auto;
             border-radius: 10px;
             background-color: grey;
-            padding: 20px;
             box-shadow: 5px 5px 5px 5px rgb(0,0,0);
+            padding-bottom: 15px;
 
         }
         
@@ -92,11 +92,13 @@
 
         }
 
-        @media only screen and (max-width: 500px){
+        @media only screen and (max-width: 650px){
             
             form{
                 
-                width: 250px;
+                width: 100%;
+                border-radius: 0px;
+                text-shadow: 0px;
                 
             }
             
@@ -153,7 +155,6 @@ if(isset($_POST["namn"]) && isset($_POST["email"]) && isset($_POST["text"])){
     
     $to = "max.valdaseridesolofsson@elev.ga.ntig.se";
     $subject = "Mail från mail-formuläret";
-
 
     $name = $_POST["name"];
     $mail = $_POST["email"];

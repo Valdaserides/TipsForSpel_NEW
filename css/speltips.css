@@ -103,49 +103,6 @@
 
 }
 
-@media only screen and (max-width: 1000px) {
-
-    .tips-closed {
-
-        height: 500px;
-
-    }
-
-    .tips-closed p {
-        width: 90%;
-        overflow: scroll;
-    }
-
-}
-
-@media only screen and (max-width: 900px) {
-
-    .tips-closed {
-
-        margin-top: -280px;
-
-    }
-
-    .tips-closed span {
-
-        margin: 0;
-
-    }
-
-    .main-content {
-
-        width: 100%;
-
-    }
-
-    .tips-closed h5 {
-
-        width: 75%;
-
-    }
-
-}
-
 .main-content {
 
     height: auto;
@@ -283,6 +240,49 @@ input[type=submit]:hover, .submit:hover {
     
     cursor: pointer;
     
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .tips-closed {
+
+        height: 500px;
+
+    }
+
+    .tips-closed p {
+        width: 90%;
+        overflow: scroll;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .tips-closed {
+
+        margin-top: -280px;
+
+    }
+
+    .tips-closed span {
+
+        margin: 0;
+
+    }
+
+    .main-content {
+
+        width: 100%;
+
+    }
+
+    .tips-closed h5 {
+
+        width: 75%;
+
+    }
+
 }
 
 @media only screen and (max-width: 1000px) {

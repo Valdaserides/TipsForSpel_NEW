@@ -11,6 +11,8 @@
     <style>
 
         <?php include("css/speltips.css"); ?>  /* Includeing css for tips */
+        
+        
        
     </style>
 

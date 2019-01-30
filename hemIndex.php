@@ -150,7 +150,7 @@
 
             width: 100%;
             height: auto;
-            background-color: lightgreen;
+            background-color: lightblue;
             margin-bottom: 200px;
             padding-bottom: 50px;
 

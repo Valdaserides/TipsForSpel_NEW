@@ -1,7 +1,9 @@
 .main-content {
-    
+
     padding-bottom: 15px;
-    
+    height: auto;
+    width: 1000px;
+
 }
 
 .tips {
@@ -96,16 +98,9 @@
 .kryss {
 
     width: 100%;
-
     margin-left: 60px;
     margin-top: 10px;
     position: absolute;
-
-}
-
-.main-content {
-
-    height: auto;
 
 }
 
@@ -145,7 +140,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    height: auto;
 
 }
 
@@ -190,14 +186,15 @@ input[type=submit] {
 
 }
 
-input[type=submit]:hover, .submit:hover {
+input[type=submit]:hover,
+.submit:hover {
 
     background-color: lightgreen;
 
 }
 
-.submit{
-    
+.submit {
+
     border: none;
     background-color: #4CAF50;
     color: white;
@@ -209,11 +206,11 @@ input[type=submit]:hover, .submit:hover {
     text-align: center;
     font-weight: 100;
     padding-top: 15px;
-    
+
 }
 
-#loadMore{
-    
+#loadMore {
+
     text-align: center;
     color: white;
     text-decoration: none;
@@ -227,76 +224,39 @@ input[type=submit]:hover, .submit:hover {
     transition: .2s ease-in-out;
     width: 96.7%;
     margin: auto;
-    
+
 }
 
-#loadMore:hover{
-    
+#loadMore:hover {
+
     opacity: .8;
-    
+
 }
 
-.pointer{
-    
+.pointer {
+
     cursor: pointer;
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .tips-closed {
+
+        height: 500px;
+
+    }
+
+    .tips-closed p {
+
+        width: 90%;
+        overflow: scroll;
+
+    }
     
-}
-
-@media only screen and (max-width: 1000px) {
-
-    .tips-closed {
-
-        height: 500px;
-
-    }
-
-    .tips-closed p {
-        width: 90%;
-        overflow: scroll;
-    }
-
-}
-
-@media only screen and (max-width: 900px) {
-
-    .tips-closed {
-
-        margin-top: -280px;
-
-    }
-
-    .tips-closed span {
-
-        margin: 0;
-
-    }
-
-    .main-content {
-
-        width: 100%;
-
-    }
-
-    .tips-closed h5 {
-
-        width: 75%;
-
-    }
-
-}
-
-@media only screen and (max-width: 1000px) {
-
-    .tips-closed {
-
-        height: 500px;
-
-    }
-
-    .tips-closed p {
+    .main-content{
         
-        width: 90%;
-        overflow: scroll;
+        width: 100%;
         
     }
 
@@ -313,12 +273,6 @@ input[type=submit]:hover, .submit:hover {
     .tips-closed span {
 
         margin: 0;
-
-    }
-
-    .main-content {
-
-        width: 100%;
 
     }
 
@@ -351,8 +305,6 @@ input[type=submit]:hover, .submit:hover {
 }
 
 @media only screen and (max-width: 500px) {
-
-
 
     input[type=text]:focus {
         width: 130px;

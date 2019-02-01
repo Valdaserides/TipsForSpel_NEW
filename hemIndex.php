@@ -160,7 +160,8 @@
             
             text-align: center;
             font-family: 'Karla';
-            padding-top: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             
         }
         

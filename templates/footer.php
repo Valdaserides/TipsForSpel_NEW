@@ -6,8 +6,11 @@
 
 <style>
     
+    @import url('https://fonts.googleapis.com/css?family=Karla:700');
+    
     footer {
-
+    
+        font-family: 'Karla';
         width: 100%;
         height: auto;
         background-color: lightblue;
@@ -43,6 +46,14 @@
         height: auto;
         text-align: center;
         padding-bottom: 50px;
+        border-right: 1px solid;
+        padding-right: 50px;
+        
+    }
+    
+    footer #info h3{
+        
+        margin-top: 50px;
         
     }
     
@@ -87,8 +98,14 @@
         
     }
 
-    @media only screen and(max-width: 750px) {
-
+    @media only screen and (max-width: 692px){
+        
+        footer #info{
+            border-right: none;
+            padding-right: 0;
+            border-bottom: 1px solid;
+            margin-bottom: 50px;
+        }
 
     }
 
@@ -102,6 +119,7 @@
 
            <h2><i>Tips för spel är för dig som precis börjat spela ett spel och villa ha snabba tips för att komma igång!</i></h2>
             
+            <h3> Problem eller synpunkter med sidan? Kontakta admin <a href="kontaktIndex.php">här</a>. </h3>
 
         </div>
 

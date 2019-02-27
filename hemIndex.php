@@ -76,7 +76,12 @@
 
             margin-top: 7px;
             fill: white;
+            transition: .2s ease;
 
+        }
+        
+        .parallax a svg:hover{
+            fill: black;
         }
 
         .main-content {
@@ -111,6 +116,10 @@
             align-items: center;
             margin: 7px;
 
+        }
+        
+        #sections section:hover{
+            box-shadow: 0px 0px 10px #fff;
         }
 
         #sections section h2,

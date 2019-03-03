@@ -102,7 +102,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
                 <?php
                 
-                $query = "SELECT * FROM speltips_csgo order by speltips_csgo_id desc;;";
+                $query = "SELECT * FROM speltips_alla WHERE speltips_alla_spel = 'CSGO' order by speltips_alla_id desc;";
  
                 if(isset($_GET['search'])){
                     
@@ -110,7 +110,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                     
                     $searchq = preg_replace("#[^0-9a-ö]#i","",$searchq);
                     
-                    $query = "SELECT * FROM speltips_csgo WHERE speltips_csgo_publicerare LIKE '%$searchq%' OR speltips_csgo_titel LIKE '%$searchq%';";
+                    $query = "SELECT * FROM speltips_alla WHERE speltips_alla_spel = 'CSGO' AND speltips_alla_publicerare LIKE '%$searchq%' OR speltips_alla_titel LIKE '%$searchq%';";
                     
                 }
                 
@@ -126,42 +126,44 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                 }
                 else{
                 while($row = mysqli_fetch_array($result)){
+                if($row['speltips_alla_confirmed'] == 1){
                 $n++;
-                $arr[$n] = $row['speltips_csgo_id'];
+                $arr[$n] = $row['speltips_alla_id'];
                 
             ?>
 
                 <a class="tips-click-<?php echo $arr[$n]; ?>" onclick="showTips(<?php echo $arr[$n]; ?>)">
                     <div class="tips">
 
-                        <img src="imgs/<?php echo $row['speltips_csgo_img_name'];?>" class="pointer">
+                        <img src="imgs/<?php echo $row['speltips_alla_img_name'];?>" class="pointer">
                         <h2><a class="tips-click-<?php echo $arr[$n]; ?>" onclick="showTips(<?php echo $arr[$n]; ?>)" style="color:blue;text-decoration:underline;cursor:pointer;">
-                                <?php echo $row['speltips_csgo_titel']; ?></a></h2>
+                                <?php echo $row['speltips_alla_titel']; ?></a></h2>
                         <p>Publicerare:
-                            <?php echo $row['speltips_csgo_publicerare']; ?>
+                            <?php echo $row['speltips_alla_publicerare']; ?>
                         </p>
-                        <p>Spel: <a href="<?php echo $row['speltips_csgo_spel']; ?>Index.php">
-                                <?php echo $row['speltips_csgo_spel']; ?></a></p>
+                        <p>Spel: <a href="<?php echo $row['speltips_alla_spel']; ?>Index.php">
+                                <?php echo $row['speltips_alla_spel']; ?></a></p>
                     </div>
                 </a>
                 <div class="tips-closed tips-closed-<?php echo $arr[$n]; ?>">
 
                     <div class="kryss"> <span onclick="hideTips(<?php echo $arr[$n]; ?>)">&#10006;</span> </div>
                     <h2>
-                        <?php echo $row["speltips_csgo_titel"]; ?>
+                        <?php echo $row["speltips_alla_titel"]; ?>
                     </h2>
                     <h5 style="border:none;padding:0;"><i>Spel: </i>
-                        <?php echo $row['speltips_csgo_spel']; ?>
+                        <?php echo $row['speltips_alla_spel']; ?>
                     </h5>
                     <h5><i>Publicerat av: </i>
-                        <?php echo $row['speltips_csgo_publicerare']; ?>
+                        <?php echo $row['speltips_alla_publicerare']; ?>
                     </h5>
                     <p>
-                        <?php echo $row['speltips_csgo_text']; ?>
+                        <?php echo $row['speltips_alla_text']; ?>
                     </p>
 
                 </div>
                 <?php
+                }
                 }
                 }
                 ?>

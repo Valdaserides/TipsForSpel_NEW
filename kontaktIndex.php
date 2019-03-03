@@ -83,12 +83,13 @@
             
         }
 
-        main .main-content h2{
+        .main-content h2{
 
             font-size: 2.2em;
             padding: 20px;
             color: white;
             text-align: center;
+            
 
         }
 
@@ -116,7 +117,11 @@
 
 <body>
 
-    <?php include("templates/navigation.php"); ?>
+    <?php 
+    
+    echo " <script> $('#mailFail').show(); </script> ";
+    
+    include("templates/navigation.php"); ?>
 
     <main>
 
@@ -153,8 +158,8 @@
 
 if(isset($_POST["namn"]) && isset($_POST["email"]) && isset($_POST["text"])){
     
-    $to = "max.valdaseridesolofsson@elev.ga.ntig.se";
-    $subject = "Mail från mail-formuläret";
+    $to = "valmaxolo@hotmail.com";
+    $subject = "Mail från tipsforspel.nu";
 
     $name = $_POST["name"];
     $mail = $_POST["email"];
@@ -162,8 +167,23 @@ if(isset($_POST["namn"]) && isset($_POST["email"]) && isset($_POST["text"])){
 
     $headers = "Från: " . $name . " Svara till: " . $mail;
     
-    mail($to,$subject,$message,$headers);
+    if(mail($to,$subject,$message,$headers)){
+        echo " <script> $('#mailSuccess').show(); </script> ";
+    }
+    else{
+        echo " <script> $('#mailFail').show(); </script> ";
+    }
     
 }
 
 ?>
+
+
+
+
+
+
+
+
+
+

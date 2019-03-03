@@ -1,0 +1,188 @@
+[03-Mar-2019 14:03:56 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/xanhhqjc/public_html/admin/adminView.php on line 9
+[03-Mar-2019 14:05:58 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:05:58 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:05:58 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:06:00 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:06:00 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:06:00 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:06:00 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:06:00 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:06:00 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:06:00 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:06:00 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:06:00 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:06:49 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:06:49 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:06:49 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:25 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:25 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:25 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:26 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:26 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:26 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:26 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:26 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:26 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:26 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:26 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:26 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:27 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:27 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:27 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:43 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:43 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:43 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:52 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:52 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:07:52 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:08:03 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:08:03 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:08:03 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:08:06 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:08:06 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:08:06 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:08:13 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:08:13 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:08:13 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:08:27 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:08:27 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:08:27 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:09:08 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:09:08 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:09:08 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:10:18 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:10:18 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:10:18 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:10:19 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:10:19 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:10:19 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:10:19 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:10:19 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:10:19 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:10:40 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:10:40 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:10:40 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:10:56 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:10:56 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:10:56 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:11:20 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:11:20 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:11:20 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:11:36 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:11:36 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:11:36 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:12:03 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:12:03 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:12:03 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:12:04 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:12:04 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:12:04 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:12:04 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:12:04 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:12:04 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:12:16 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:12:16 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:12:16 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:12:31 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:12:31 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:12:31 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:13:13 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:13:13 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:13:13 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:13:17 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:13:17 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:13:17 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:13:42 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:13:42 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:13:42 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:13:49 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:13:49 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:13:49 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:14:09 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:14:09 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:14:09 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:14:27 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:14:27 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:14:27 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:14:53 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:14:53 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:14:53 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:15:11 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:15:11 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:15:11 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:15:33 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:15:33 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:15:33 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:15:41 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:15:41 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:15:41 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:18:35 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:18:35 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:18:35 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:18:51 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:18:51 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:18:51 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:18:53 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:18:53 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:18:53 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:19:12 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:19:12 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:19:12 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:19:42 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:19:42 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:19:42 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:20:05 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:20:05 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:20:05 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:20:18 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:20:18 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:20:18 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:22:08 UTC] PHP Parse error:  syntax error, unexpected ''speltips_alla_text]; ?> </p>' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/xanhhqjc/public_html/admin/adminView.php on line 110
+[03-Mar-2019 14:22:21 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:22:21 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:22:21 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:23:08 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:23:08 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:23:08 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:23:34 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:23:34 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:23:34 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:23:48 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:23:48 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:23:48 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:08 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:08 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:08 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:20 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:20 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:20 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:30 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:30 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:30 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:37 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:37 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:37 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:44 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:44 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:44 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:56 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:56 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:24:56 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/admin/adminView.php on line 18
+[03-Mar-2019 14:31:33 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/xanhhqjc/public_html/admin/adminView.php on line 107
+[03-Mar-2019 15:08:36 UTC] PHP Parse error:  syntax error, unexpected '" ?>> Ta bort </a>' (T_CONSTANT_ENCAPSED_STRING) in /home/xanhhqjc/public_html/admin/adminView.php on line 89
+[03-Mar-2019 15:12:49 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xanhhqjc/public_html/admin/adminView.php on line 82
+[03-Mar-2019 15:13:07 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xanhhqjc/public_html/admin/adminView.php on line 82
+[03-Mar-2019 15:13:07 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xanhhqjc/public_html/admin/adminView.php on line 82
+[03-Mar-2019 15:13:07 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xanhhqjc/public_html/admin/adminView.php on line 82
+[03-Mar-2019 15:13:17 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xanhhqjc/public_html/admin/adminView.php on line 82
+[03-Mar-2019 15:15:21 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xanhhqjc/public_html/admin/adminView.php on line 79
+[03-Mar-2019 15:16:42 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xanhhqjc/public_html/admin/adminView.php on line 79
+[03-Mar-2019 15:16:52 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xanhhqjc/public_html/admin/adminView.php on line 79
+[03-Mar-2019 15:16:52 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xanhhqjc/public_html/admin/adminView.php on line 79
+[03-Mar-2019 15:47:51 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xanhhqjc/public_html/admin/adminView.php on line 81
+[03-Mar-2019 15:54:33 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xanhhqjc/public_html/admin/adminView.php on line 81
+[03-Mar-2019 15:57:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xanhhqjc/public_html/admin/delete.php:8) in /home/xanhhqjc/public_html/admin/delete.php on line 13
+[03-Mar-2019 15:58:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xanhhqjc/public_html/admin/delete.php:8) in /home/xanhhqjc/public_html/admin/delete.php on line 13
+[03-Mar-2019 15:58:48 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/xanhhqjc/public_html/admin/delete.php on line 16
+[03-Mar-2019 15:58:52 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/xanhhqjc/public_html/admin/delete.php on line 16
+[03-Mar-2019 15:59:54 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/xanhhqjc/public_html/admin/delete.php on line 16

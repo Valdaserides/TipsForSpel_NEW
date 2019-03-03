@@ -124,8 +124,11 @@ mysqli_query($dbc,"SET NAMES UTF-8"); // Setting the character endoing to UTF-8.
                 }
                 else{
                 while($row = mysqli_fetch_array($result)){ // Writing out everything from the database;
-                $n++; // Incrementing the index-array
-                $arr[$n] = $row['speltips_alla_id']; // The index of the array at index $n, is the same as the id in the database.
+                if($row['speltips_alla_confirmed'] == 1){
+                    $n++; // Incrementing the index-array
+                    $arr[$n] = $row['speltips_alla_id']; // The index of the array at index $n, is the same as the id in the database.
+                
+                
                 
             ?>
 
@@ -151,6 +154,7 @@ mysqli_query($dbc,"SET NAMES UTF-8"); // Setting the character endoing to UTF-8.
                 </div>
                 <?php
                 } // Closing loop
+                }
                 } // Closing else
                 ?>
             </div>

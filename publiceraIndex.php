@@ -235,7 +235,7 @@
 
                 <div id="success">
 
-                    <h3>Ditt speltips kommer nu ligger uppe <a href="speltipsIndex.php">här</a>! Tack!</h3>
+                    <h3>Ditt tips kommer nu granskas av en av våra administratörer och ligga uppe inom kort! Tack!</h3>
 
                 </div>
 
@@ -291,7 +291,7 @@
 
 <?php
 
-    $dbc = mysqli_connect("localhost","root","","speltips"); // Giving the variabel $dbc the connection to the database.
+    require("dbConnect.php");
 
     if(isset($_POST['publicerare']) && isset($_POST['kategori']) && isset($_POST['titel']) && isset($_POST['text']) && isset($_POST['submit'])){ // Checking so all the form inputs has been set.
         
@@ -342,7 +342,7 @@
             if($kategori == 1){ // If the kategory radio-button is 1
 
                 $kategoriVariabel = "speltips_wow"; // the category variabel is set to the speltips_wow table in the database.
-                $speltips = "speltips_wow_";
+                
                 $spel = "WoW";
 
             }
@@ -350,7 +350,7 @@
             else if($kategori == 2){
 
                 $kategoriVariabel = "speltips_lol";
-                $speltips = "speltips_lol_";
+                
                 $spel = "LoL";
 
             }
@@ -358,26 +358,22 @@
             else if($kategori == 3){
 
                 $kategoriVariabel = "speltips_csgo";
-                $speltips = "speltips_csgo_";
+                
                 $spel = "CSGO";
 
             }
 
-            $query = "INSERT INTO $kategoriVariabel ($speltips"."img_name,$speltips"."publicerare,$speltips"."spel,$speltips"."titel,$speltips"."text) VALUES ('$img','$publicerare','$spel','$titel','$tips');";
+            $query = "INSERT INTO speltips_alla (speltips_alla_img_name,speltips_alla_publicerare,speltips_alla_spel,speltips_alla_titel,speltips_alla_text,speltips_alla_confirmed) VALUES ('$img','$publicerare','$spel','$titel','$tips',0);";
 
             if(mysqli_query($dbc,$query)){
+                
                 mysqli_query($dbc,"SET NAMES UTF-8");
                 echo "<script> document.getElementById('success').style.display = 'block'; </script>";
-
-                $query2 = "INSERT INTO speltips_alla (speltips_alla_img_name,speltips_alla_publicerare,speltips_alla_spel,speltips_alla_titel,speltips_alla_text) VALUES ('$img','$publicerare','$spel','$titel','$tips');";
-
-                mysqli_query($dbc,$query2);
-                mysqli_query($dbc,"SET NAMES UTF-8");
 
             }
 
             else{
-
+                
                 echo "<script> document.getElementById('fail').style.display = 'block'; </script>";
 
             }

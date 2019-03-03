@@ -14,6 +14,7 @@
         width: 100%;
         height: auto;
         background-color: lightblue;
+        text-align:center;
 
     }
     
@@ -108,6 +109,11 @@
         }
 
     }
+    
+    footer a img{
+        height:20px;
+        width:20px;
+    }
 
 </style>
 
@@ -141,5 +147,6 @@
     </div>
     
     <p> <i> Copyright &copy; Tips För Spel </i> </p>
+    <a href="admin/admin.php"> <img src="http://simpleicon.com/wp-content/uploads/user1.png"> </a> 
     
 </footer>

@@ -48,6 +48,7 @@ if(isset($_SESSION['login_user'])){
                 
                 width: 75%;
                 height:35px;
+                margin-bottom: 20px;
                 
             }
             
@@ -59,12 +60,20 @@ if(isset($_SESSION['login_user'])){
                 padding-left:25px;
                 padding-right:25px;
                 cursor:pointer;
+                margin-top: 25px;
                 
             }
             
             #login form input[type=submit]:hover{
                 
                 opacity:.5;
+                
+            }
+            
+            #login form a{
+                
+                font-size: 1em;
+                margin-top: 100px;
                 
             }
             
@@ -83,6 +92,7 @@ if(isset($_SESSION['login_user'])){
                     Användarnamn:<input type="text" name="username">
                     Lösenord:<input type="password" name="password">
                     <input type="submit" name="submit">
+                    <a href="../speltipsIndex.php"> Tillbaka </a>
                    
                 </form>
                     

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Publicera speltips</title>
-    <link rel="stylesheet" href="css/publiceraIndexCss.css">
-    <link rel="stylesheet" href="css/cssMain.css"> 
+    <link rel="stylesheet" href="../css/publiceraIndexCss.css">
+    <link rel="stylesheet" href="../css/cssMain.css"> 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -223,7 +223,7 @@
 
 <body>
 
-    <?php include("templates/navigation.php"); ?>
+    <?php include("../templates/navigation.php"); ?>
 
     <main>
 
@@ -273,7 +273,7 @@
 
     </main>
 
-    <?php include("templates/footer.php"); ?>
+    <?php include("../templates/footer.php"); ?>
 
     <script>
         
@@ -291,7 +291,7 @@
 
 <?php
 
-    require("dbConnect.php");
+    require("../dbConnect.php");
 
     if(isset($_POST['publicerare']) && isset($_POST['kategori']) && isset($_POST['titel']) && isset($_POST['text']) && isset($_POST['submit'])){ // Checking so all the form inputs has been set.
         
@@ -306,7 +306,7 @@
         else{
             
             $kategoriVariabel = ""; // Setting the category-variabel to nothing.
-            $img = "img/ingenbild.png"; // Setting the default picture name
+            $img = "../img/ingenbild.png"; // Setting the default picture name
 
             if(isset($img)){ // If the user has uploaded a picture
 
@@ -315,7 +315,7 @@
 
                 if(!empty($img)){ // If the name of the $img is not null
 
-                    $path = "imgs/"; // Declaring a varibel
+                    $path = "../imgs/"; // Declaring a varibel
 
                     if(move_uploaded_file($img_temp_name,$path.$img)){ // Checking if the picture could be uploaded
 

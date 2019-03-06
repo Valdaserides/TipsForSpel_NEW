@@ -161,11 +161,9 @@ input[type=text] {
     border-radius: 2px;
     font-size: 16px;
     background-color: white;
-    background-image: url('imgs/serachicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
     transition: width .4s ease-in-out;
+    border-radius:15px;
 
 }
 
@@ -183,6 +181,8 @@ input[type=submit] {
     width: 65px;
     margin-left: 15px;
     cursor: pointer;
+    height: 50px;
+    border-radius:15px;
 
 }
 
@@ -206,6 +206,7 @@ input[type=submit]:hover,
     text-align: center;
     font-weight: 100;
     padding-top: 15px;
+    border-radius:15px;
 
 }
 
@@ -328,6 +329,15 @@ input[type=submit]:hover,
 
         height: 150px;
 
+    }
+    
+    form{
+        
+        margin:0;
+    }
+    
+    .text{
+        padding-top: 30px;
     }
 
 }

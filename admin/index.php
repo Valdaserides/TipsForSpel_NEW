@@ -35,6 +35,9 @@ if(isset($_SESSION['login_user'])){
 
             #login form{
                 
+                -webkit-box-shadow: 9px 11px 45px -4px rgba(0,0,0,0.87);
+                -moz-box-shadow: 9px 11px 45px -4px rgba(0,0,0,0.87);
+                box-shadow: 9px 11px 45px -4px rgba(0,0,0,0.87);
                 height: 400px;
                 width:350px;
                 background-color: white;
@@ -77,6 +80,19 @@ if(isset($_SESSION['login_user'])){
                 
             }
             
+            #loginFail{
+                
+                width: 100%;
+                padding-bottom: 15px;
+                padding-top: 15px;
+                background-color: red;
+                text-align:center;
+                font-size: 1.2em;
+                margin-bottom: 15px;
+                display:none;
+                
+            }
+            
         </style>
         
     </head>
@@ -88,11 +104,13 @@ if(isset($_SESSION['login_user'])){
             <div id="login">
                 
                 <form method="post" action="">
-                
+                    
+                    <div id="loginFail"> Fel användarnamn eller lösenord. </div>
+                    
                     Användarnamn:<input type="text" name="username">
                     Lösenord:<input type="password" name="password">
-                    <input type="submit" name="submit">
-                    <a href="../speltipsIndex.php"> Tillbaka </a>
+                    <input type="submit" name="submit" value="Logga in">
+                    <a href="../"> Tillbaka </a>
                    
                 </form>
                     

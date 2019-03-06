@@ -3,7 +3,7 @@
 include('session.php');
 
 if(!isset($_SESSION['login_user'])){
-    header("Location: admin.php");
+    header("Location: /admin");
 }
 
 require('../dbConnect.php');
@@ -91,7 +91,9 @@ require('../dbConnect.php');
     <body>
         
         <main>
-        <a href="logout.php" style=""> Logga ut </a>
+        <h3><a href="../">TILLBAKA</a></h3>
+        <a href="logout.php" style=""> Logga ut </a><br>
+        <a href="register.php"> Skapa nytt admin konto </a>
             <div id="one">
                <h1>VÄNTANDE</h1><br>
                 

@@ -3,17 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Speltips - LoL</title>
-    <link rel="stylesheet" href="css/csgoIndexCss.css">
-    <link rel="stylesheet" href="css/cssMain.css">
+    <title>Speltips - CSGO</title>
+    <link rel="stylesheet" href="../css/csgoIndexCss.css">
+    <link rel="stylesheet" href="../css/cssMain.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <style>
 
-        <?php include("css/speltips.css"); 
+        <?php include("../css/speltips.css"); 
         
         // For comments, check speltipsIndex.php
-        
         
         ?>
         
@@ -30,7 +29,7 @@
                 
             });
             
-           $(".tips").slice(0,9).show(); 
+            $(".tips").slice(0,9).show(); // For comments, check speltipsIndex.php
             if($(".tips").length <= 9){
                $("#loadMore").hide();
             }
@@ -38,7 +37,7 @@
                 
                 e.preventDefault();
                 $(".tips:hidden").slice(0,6).slideDown();
-                if($(".tips:hidden").length == 0){
+                if($("#tips:hidden").length == 0){
                     $("#loadMore").fadeOut("slow");
                 }
                 
@@ -67,7 +66,7 @@
 
 <?php
 
-require("dbConnect.php");
+require("../dbConnect.php");
     
 mysqli_query($dbc,"SET NAMES UTF-8");
     
@@ -75,7 +74,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
 <body>
 
-    <?php include("templates/navigation.php"); ?>
+    <?php include("../templates/navigation.php"); ?>
 
     <main>
 
@@ -83,15 +82,15 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
             <div class="text">
 
-                <h3>League of Legends, eller LoL för förkortning, är världen största MOBA (Multiplayer online battle arena) spel. LoL släpptes 2009 och har stadigt ökat med spelare genom åren.</h3>
+                <h3> Counter Strike: Global Offensive, eller CSGO, är ett FPS (First person shooter) spel. Det släpptes 2012 av Valve. </h3>
 
                 <div class="middle">
 
                     <form class="search-box" method="get">
 
-                        <input type="text" class="input" name="search" placeholder="Sök efter publicerare, titel mm">
+                        <input type="text" class="input" name="search" placeholder="Sök efter publicerare eller titel">
                         <input type="submit" value="Sök" class="">
-                        <a href="lolIndex.php" class="submit">Visa alla</a>
+                        <a href="/csgo" class="submit">Visa alla</a>
 
                     </form>
 
@@ -103,7 +102,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
                 <?php
                 
-                $query = "SELECT * FROM speltips_alla WHERE speltips_alla_spel = 'LoL' order by speltips_alla_id desc;";
+                $query = "SELECT * FROM speltips_alla WHERE speltips_alla_spel = 'CSGO' order by speltips_alla_id desc;";
  
                 if(isset($_GET['search'])){
                     
@@ -111,7 +110,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                     
                     $searchq = preg_replace("#[^0-9a-ö]#i","",$searchq);
                     
-                    $query = "SELECT * FROM speltips_alla WHERE speltips_alla_spel = 'LoL' AND speltips_alla_publicerare LIKE '%$searchq%' OR speltips_alla_titel LIKE '%$searchq%';";
+                    $query = "SELECT * FROM speltips_alla WHERE speltips_alla_spel = 'CSGO' AND speltips_alla_publicerare LIKE '%$searchq%' OR speltips_alla_titel LIKE '%$searchq%';";
                     
                 }
                 
@@ -122,7 +121,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                 
                 if(mysqli_num_rows($result) <= 0){
                     
-                    echo "<p style='padding:50px; font-size:25px;color:white;'>Inga speltips hittades. Testa att söka i <a href='speltipsIndex.php' style='color:white;'>alla tips.</a></p>";
+                    echo "<p style='padding:50px; font-size:25px; color:white;'>Inga speltips hittades. Testa att söka i <a href='speltipsIndex.php' style='color:white;'>alla tips.</a></p>";
                     
                 }
                 else{
@@ -148,7 +147,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                 </a>
                 <div class="tips-closed tips-closed-<?php echo $arr[$n]; ?>">
 
-                    <div class="kryss"><span onclick="hideTips(<?php echo $arr[$n]; ?>)">&#10006;</span></div>
+                    <div class="kryss"> <span onclick="hideTips(<?php echo $arr[$n]; ?>)">&#10006;</span> </div>
                     <h2>
                         <?php echo $row["speltips_alla_titel"]; ?>
                     </h2>
@@ -174,7 +173,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
     </main>
 
-    <?php include("templates/footer.php"); ?>
+    <?php include("../templates/footer.php"); ?>
 
 </body>
 

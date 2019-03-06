@@ -1,5 +1,9 @@
 <?php
+include('session.php');
 
+if(!isset($_SESSION['login_user'])){
+    header("Location: /admin");
+}
 require("../dbConnect.php");
 
 if(!isset($_GET['id']) && !isset($_GET['titel']) && !isset($_GET['publ']) && !isset($_GET['spel']) && !isset($_GET['text'])){
@@ -24,8 +28,8 @@ else{
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+<head><meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+    
     <title>Document</title>
 </head>
 <body>
@@ -98,19 +102,25 @@ else{
         $text = $_POST['text'];
     
     }
-
-    $query = "UPDATE speltips_alla SET speltips_alla_img_name = '$img', speltips_alla_publicerare = '$publicerare', speltips_alla_spel = '$spel', speltips_alla_titel = '$titel', speltips_alla_text = '$text'  WHERE speltips_alla_id = $id";
     
-    if(mysqli_query($dbc,$query)){
+    if(isset($_POST['imgRemove']) || isset($_POST['titel']) || isset($_POST['publicerare']) || isset($_POST['spel']) || isset($_POST['text'])){
         
-        echo "Speltipsen har uppdaterats!";
+        $query = "UPDATE speltips_alla SET speltips_alla_img_name = '$img', speltips_alla_publicerare = '$publicerare', speltips_alla_spel = '$spel', speltips_alla_titel = '$titel', speltips_alla_text = '$text'  WHERE speltips_alla_id = $id";
+        
+        if(mysqli_query($dbc,$query)){
+            
+            echo "Speltipset har uppdaterats!";
+            
+        }
+    
+        else{
+            echo "Något gick fel...";
+        }
+
         
     }
 
-    else{
-        echo "Något gick fel...";
-    }
-
+        
 ?>
 
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/navigationCss.css">
+    <link rel="stylesheet" href="../css/navigationCss.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Karla:700');
@@ -375,7 +375,7 @@
 
         <nav>
             
-            <h3><a href="hemIndex.php">Tips för spel</a></h3>
+            <h3><a href="../">Tips för spel</a></h3>
 
             <div id="respo-btn" onclick="myFunction(this)">
                 <div class="bar1"></div>
@@ -385,19 +385,19 @@
 
             <ul class="nav-menu">
 
-                <li><a href="hemIndex.php">hem</a></li>
+                <li><a href="">hem</a></li>
                 <div id="dropdown">
                     <li><a id="dropbtn" href="speltipsIndex.php">Speltips</a></li>
                     <ul id="dropdown-content">
 
-                        <li><a href="csgoIndex.php">CS:GO Speltips</a></li>
+                        <li><a href="../csgo/index.php">CS:GO Speltips</a></li>
                         <li><a href="wowIndex.php">WoW Speltips</a></li>
                         <li><a href="lolIndex.php">LoL Speltips</a></li>
 
                     </ul>
                 </div>
 
-                <li><a href="publiceraIndex.php">Publicera speltips</a></li>
+                <li><a href="/TipsForSpel_NEW/publicera">Publicera speltips</a></li>
                 <li><a href="kontaktIndex.php" class="kontakt">Kontakt</a></li>
 
             </ul>

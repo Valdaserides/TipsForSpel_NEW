@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Speltips</title>
-    <link rel="stylesheet" href="css/speltipsIndexCss.css">
-    <link rel="stylesheet" href="css/cssMain.css">
+    <link rel="stylesheet" href="../css/speltipsIndexCss.css">
+    <link rel="stylesheet" href="../css/cssMain.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <style>
 
-        <?php include("css/speltips.css"); ?>  /* Includeing css for tips */
+        <?php include("../css/speltips.css"); ?>  /* Includeing css for tips */
        
     </style>
 
@@ -64,7 +64,7 @@
 
 <?php
 
-require("dbConnect.php"); // Requiring the database connection
+require("../dbConnect.php"); // Requiring the database connection
 
 mysqli_query($dbc,"SET NAMES UTF-8"); // Setting the character endoing to UTF-8.
     
@@ -72,7 +72,7 @@ mysqli_query($dbc,"SET NAMES UTF-8"); // Setting the character endoing to UTF-8.
 
 <body>
 
-    <?php include("templates/navigation.php"); // Including the navigation bar. ?>
+    <?php include("../templates/navigation.php"); // Including the navigation bar. ?>
 
     <main>
 
@@ -88,7 +88,7 @@ mysqli_query($dbc,"SET NAMES UTF-8"); // Setting the character endoing to UTF-8.
 
                         <input type="text" class="input" name="search" placeholder="Sök efter publicerare, titel mm">
                         <input type="submit" value="Sök" class="">
-                        <a href="speltipsIndex.php" class="submit">Visa alla</a>
+                        <a href="/speltips" class="submit">Visa alla</a>
 
                     </form>
 
@@ -140,7 +140,7 @@ mysqli_query($dbc,"SET NAMES UTF-8"); // Setting the character endoing to UTF-8.
                     <p>Publicerare:
                         <?php echo $row['speltips_alla_publicerare']; ?>
                     </p>
-                    <p>Spel: <a href="<?php echo $row['speltips_alla_spel']; ?>Index.php">
+                    <p>Spel: <a href="/<?php echo $row['speltips_alla_spel']; ?>">
                             <?php echo $row['speltips_alla_spel']; ?></a></p>
                 </div></a>
                 <div class="tips-closed tips-closed-<?php echo $arr[$n]; ?>"> 
@@ -165,7 +165,7 @@ mysqli_query($dbc,"SET NAMES UTF-8"); // Setting the character endoing to UTF-8.
 
     <?php
     
-        include("templates/footer.php"); // Including the footer
+        include("../templates/footer.php"); // Including the footer
 
     ?>
 

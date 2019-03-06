@@ -1,0 +1,9 @@
+[06-Mar-2019 12:57:34 UTC] PHP Warning:  include(templates/footer.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/speltips/index.php on line 168
+[06-Mar-2019 12:57:34 UTC] PHP Warning:  include(templates/footer.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/speltips/index.php on line 168
+[06-Mar-2019 12:57:34 UTC] PHP Warning:  include(): Failed opening 'templates/footer.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/speltips/index.php on line 168
+[06-Mar-2019 12:58:50 UTC] PHP Warning:  include(templates/footer.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/speltips/index.php on line 168
+[06-Mar-2019 12:58:50 UTC] PHP Warning:  include(templates/footer.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/speltips/index.php on line 168
+[06-Mar-2019 12:58:50 UTC] PHP Warning:  include(): Failed opening 'templates/footer.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/speltips/index.php on line 168
+[06-Mar-2019 13:00:42 UTC] PHP Warning:  include(templates/footer.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/speltips/index.php on line 168
+[06-Mar-2019 13:00:42 UTC] PHP Warning:  include(templates/footer.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/speltips/index.php on line 168
+[06-Mar-2019 13:00:42 UTC] PHP Warning:  include(): Failed opening 'templates/footer.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/speltips/index.php on line 168

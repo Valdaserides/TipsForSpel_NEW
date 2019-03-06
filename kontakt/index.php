@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Kontakt</title>
-    <link rel="stylesheet" type="text/css" href="/css/kontaktIndexCss.css">
-    <link rel="stylesheet" href="css/cssMain.css">
+    <link rel="stylesheet" type="text/css" href="../css/kontaktIndexCss.css">
+    <link rel="stylesheet" href="../css/cssMain.css">
 
     <style>
 
@@ -21,7 +21,7 @@
         .main-content{
             
             height: auto;
-            padding-bottom: 25px;
+            padding-bottom: 55px;
             font-family: 'Karla', sans-serif;
             
         }
@@ -32,7 +32,6 @@
             background-color: red;
             padding: 10px;
             border: 1px solid;
-            border-radius: 10px;
             
         }
 
@@ -42,7 +41,7 @@
             background-color: green;
             padding: 10px;
             border: 1px solid;
-            border-radius: 10px;
+            
 
         }
         
@@ -71,7 +70,6 @@
             margin: auto;
             border-radius: 10px;
             background-color: grey;
-            box-shadow: 5px 5px 5px 5px rgb(0,0,0);
             padding-bottom: 15px;
 
         }
@@ -121,7 +119,7 @@
     
     echo " <script> $('#mailFail').show(); </script> ";
     
-    include("templates/navigation.php"); ?>
+    include("../templates/navigation.php"); ?>
 
     <main>
 
@@ -134,10 +132,10 @@
 
             <form action="kontaktIndex.php" method="post">
 
-                <h3 id="mailSuccess"> Din förfrågan har skickats. </h3>
+                <h3 id="mailSuccess"> Ditt mail har skickats. Förvänta svar inom kort. </h3>
                 <h3 id="mailFail"> Något gick fel. </h3>
 
-                <p> Ditt namn </p> <input class="boxes" type="text" name="name" autofocus required>
+                <p> Ditt namn </p> <input class="boxes" type="text" name="namn" autofocus required>
                 <p> Din email </p> <input class="boxes" type="email" name="email" required>
                 <p> Meddelande </p> <textarea class="boxes" name="text" id="" cols="30" rows="10"></textarea><br>
                 <input type="submit" value="Skicka" id="submit">
@@ -148,7 +146,7 @@
 
     </main>
 
-    <?php include("templates/footer.php"); ?>
+    <?php include("../templates/footer.php"); ?>
 
 </body>
 
@@ -158,21 +156,28 @@
 
 if(isset($_POST["namn"]) && isset($_POST["email"]) && isset($_POST["text"])){
     
-    $to = "valmaxolo@hotmail.com";
-    $subject = "Mail från tipsforspel.nu";
-
-    $name = $_POST["name"];
-    $mail = $_POST["email"];
-    $message = $_POST["text"];
-
-    $headers = "Från: " . $name . " Svara till: " . $mail;
-    
-    if(mail($to,$subject,$message,$headers)){
-        echo " <script> $('#mailSuccess').show(); </script> ";
-    }
-    else{
-        echo " <script> $('#mailFail').show(); </script> ";
-    }
+            echo "fel";
+            $to = "submittips@tipsforspel.nu";
+            $subject = "Mail från hemsidan!";
+            $message = htmlspecialchars($_POST['text']);
+            $name = htmlspecialchars($_POST['namn']);
+            $email = htmlspecialchars($_POST['email']);
+            $headers = "From: tipsforspel.nu";
+            
+            utf8_decode($namn,$email,$subject,$message);
+            
+            $message .= "\n\n\n" . "Namn: " . $name;
+            $message .= "\n" . "Svara till (email): " . $email;
+            
+            utf8_decode($subject,$message);
+            
+            if(mail($to,$subject,$message,$headers)){
+                echo '<script> document.getElementById("mailSuccess").style.display = "block"; </script> ';
+            }
+            else{
+                
+                echo '<script> document.getElementById("mailFail").style.display = "block"; </script> ';
+            }
     
 }
 

@@ -3,16 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Speltips - WoW</title>
-    <link rel="stylesheet" href="css/csgoIndexCss.css">
-    <link rel="stylesheet" href="css/cssMain.css">
+    <title>Speltips - LoL</title>
+    <link rel="stylesheet" href="../css/csgoIndexCss.css">
+    <link rel="stylesheet" href="../css/cssMain.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <style>
 
-        <?php include("css/speltips.css"); 
+        <?php include("../css/speltips.css"); 
         
         // For comments, check speltipsIndex.php
+        
         
         ?>
         
@@ -20,7 +21,7 @@
 
     <script>
 
-        $(document).ready(function(){ /* For comments, look speltipsIndex.php */
+        $(document).ready(function(){
             
             $(".btn").on("click",function(){
                 
@@ -29,7 +30,7 @@
                 
             });
             
-            $(".tips").slice(0,9).show(); // For comments, check speltipsIndex.php
+           $(".tips").slice(0,9).show(); 
             if($(".tips").length <= 9){
                $("#loadMore").hide();
             }
@@ -37,7 +38,7 @@
                 
                 e.preventDefault();
                 $(".tips:hidden").slice(0,6).slideDown();
-                if($("#tips:hidden").length == 0){
+                if($(".tips:hidden").length == 0){
                     $("#loadMore").fadeOut("slow");
                 }
                 
@@ -66,7 +67,7 @@
 
 <?php
 
-require("dbConnect.php");
+require("../dbConnect.php");
     
 mysqli_query($dbc,"SET NAMES UTF-8");
     
@@ -74,7 +75,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
 <body>
 
-    <?php include("templates/navigation.php"); ?>
+    <?php include("../templates/navigation.php"); ?>
 
     <main>
 
@@ -82,7 +83,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
             <div class="text">
 
-                <h3>World of Warcraft, eller WoW för förkortning, är ett MMORPG spel. WoW släpptes 2004 av Blizzard och förblir en av de populäraste spelen inom MMO-spel.</h3>
+                <h3>League of Legends, eller LoL för förkortning, är världen största MOBA (Multiplayer online battle arena) spel.</h3>
 
                 <div class="middle">
 
@@ -90,7 +91,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
                         <input type="text" class="input" name="search" placeholder="Sök efter publicerare, titel mm">
                         <input type="submit" value="Sök" class="">
-                        <a href="wowIndex.php" class="submit">Visa alla</a>
+                        <a href="/lol" class="submit">Visa alla</a>
 
                     </form>
 
@@ -102,7 +103,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
                 <?php
                 
-                $query = "SELECT * FROM speltips_alla WHERE speltips_alla_spel = 'WoW' order by speltips_alla_id desc;";
+                $query = "SELECT * FROM speltips_alla WHERE speltips_alla_spel = 'LoL' order by speltips_alla_id desc;";
  
                 if(isset($_GET['search'])){
                     
@@ -110,7 +111,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                     
                     $searchq = preg_replace("#[^0-9a-ö]#i","",$searchq);
                     
-                    $query = "SELECT * FROM speltips_alla WHERE speltips_alla_spel = 'WoW' AND speltips_alla_publicerare LIKE '%$searchq%' OR speltips_alla_titel LIKE '%$searchq%';";
+                    $query = "SELECT * FROM speltips_alla WHERE speltips_alla_spel = 'LoL' AND speltips_alla_publicerare LIKE '%$searchq%' OR speltips_alla_titel LIKE '%$searchq%';";
                     
                 }
                 
@@ -173,7 +174,7 @@ mysqli_query($dbc,"SET NAMES UTF-8");
 
     </main>
 
-    <?php include("templates/footer.php"); ?>
+    <?php include("../templates/footer.php"); ?>
 
 </body>
 

@@ -132,13 +132,13 @@
         <nav>
 
             <ul>
-                <li><a href="hemIndex.php">Hem</a></li>
-                <li><a href="speltipsIndex.php">Alla speltips</a></li>
-                <li><a href="csgoIndex.php">CS:GO Speltips</a></li>
-                <li><a href="wowIndex.php">WoW Speltips</a></li>
-                <li><a href="lolIndex.php">LoL Speltips</a></li>
-                <li><a href="publiceraIndex.php">Publicera speltips</a></li>
-                <li><a href="kontaktIndex.php">Kontakt</a></li>
+                <li><a href="../">Hem</a></li>
+                <li><a href="../speltips">Alla speltips</a></li>
+                <li><a href="../csgo">CS:GO Speltips</a></li>
+                <li><a href="../wow">WoW Speltips</a></li>
+                <li><a href="../lol">LoL Speltips</a></li>
+                <li><a href="../publicera">Publicera speltips</a></li>
+                <li><a href="../kontakt">Kontakt</a></li>
             </ul>
 
         </nav>
@@ -147,6 +147,6 @@
     </div>
     
     <p> <i> Copyright &copy; Tips För Spel </i> </p>
-    <a href="admin/admin.php"> <img src="http://simpleicon.com/wp-content/uploads/user1.png"> </a> 
+    <a href="../admin/"> <img src="http://simpleicon.com/wp-content/uploads/user1.png"> </a> 
     
 </footer>

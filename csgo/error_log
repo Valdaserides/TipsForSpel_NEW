@@ -1,0 +1,12 @@
+[06-Mar-2019 12:49:55 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/csgo/index.php on line 13
+[06-Mar-2019 12:49:55 UTC] PHP Warning:  include(css/speltips.css): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/csgo/index.php on line 13
+[06-Mar-2019 12:49:55 UTC] PHP Warning:  include(): Failed opening 'css/speltips.css' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/csgo/index.php on line 13
+[06-Mar-2019 12:49:55 UTC] PHP Warning:  require(dbConnect.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/csgo/index.php on line 69
+[06-Mar-2019 12:49:55 UTC] PHP Warning:  require(dbConnect.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/csgo/index.php on line 69
+[06-Mar-2019 12:49:55 UTC] PHP Fatal error:  require(): Failed opening required 'dbConnect.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/csgo/index.php on line 69
+[06-Mar-2019 12:50:19 UTC] PHP Warning:  require(dbConnect.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/csgo/index.php on line 69
+[06-Mar-2019 12:50:19 UTC] PHP Warning:  require(dbConnect.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/csgo/index.php on line 69
+[06-Mar-2019 12:50:19 UTC] PHP Fatal error:  require(): Failed opening required 'dbConnect.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/csgo/index.php on line 69
+[06-Mar-2019 12:50:34 UTC] PHP Warning:  require(dbConnect.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/csgo/index.php on line 69
+[06-Mar-2019 12:50:34 UTC] PHP Warning:  require(dbConnect.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/csgo/index.php on line 69
+[06-Mar-2019 12:50:34 UTC] PHP Fatal error:  require(): Failed opening required 'dbConnect.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/csgo/index.php on line 69

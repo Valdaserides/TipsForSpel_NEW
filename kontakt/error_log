@@ -1,0 +1,6 @@
+[06-Mar-2019 12:51:53 UTC] PHP Warning:  include(templates/navigation.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/kontakt/index.php on line 122
+[06-Mar-2019 12:51:53 UTC] PHP Warning:  include(templates/navigation.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/kontakt/index.php on line 122
+[06-Mar-2019 12:51:53 UTC] PHP Warning:  include(): Failed opening 'templates/navigation.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/kontakt/index.php on line 122
+[06-Mar-2019 12:51:53 UTC] PHP Warning:  include(templates/footer.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/kontakt/index.php on line 149
+[06-Mar-2019 12:51:53 UTC] PHP Warning:  include(templates/footer.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/kontakt/index.php on line 149
+[06-Mar-2019 12:51:53 UTC] PHP Warning:  include(): Failed opening 'templates/footer.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/kontakt/index.php on line 149

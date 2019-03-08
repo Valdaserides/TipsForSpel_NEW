@@ -68,7 +68,7 @@ require('../dbConnect.php');
                 margin-bottom: 15px;
                 border:1px solid;
                 width:300px;
-                
+                overflow: scroll;
             }
             
             .tips img{

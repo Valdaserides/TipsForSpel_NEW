@@ -147,6 +147,8 @@
     </div>
     
     <p> <i> Copyright &copy; Tips För Spel </i> </p>
+    <div>Ikoner gjorda av <a href="https://www.freepik.com/" title="Freepik">Freepik</a> och hämtade <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> licensierad av <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     <a href="../admin/"> <img src="http://simpleicon.com/wp-content/uploads/user1.png"> </a> 
+    
     
 </footer>

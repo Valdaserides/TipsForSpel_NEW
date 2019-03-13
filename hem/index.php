@@ -265,7 +265,7 @@
 
                 <section>
 
-                    <img src="imgs/checkmark.png" alt="">
+                    <img src="../imgs/checkmark.png" alt="">
 
                     <h2>Kom igång med ditt nya spel!</h2>
 
@@ -276,7 +276,7 @@
 
                 <section>
 
-                    <img src="imgs/2-512.png" alt="">
+                    <img src="../imgs/controller.png" alt="">
 
                     <h2>Våra spel</h2>
 
@@ -287,22 +287,22 @@
                 </section>
                 <section>
 
-                    <img src="imgs/thumb-up.png" alt="">
+                    <img src="../imgs/thumbs-up-hand-symbol.png" alt="">
 
                     <h2>Publicera dina egna tips!</h2>
 
-                    <p>Hjälp andra att också komma igång genom att publicera dina tips <a href="publiceraIndex.php">här.</a></p>
+                    <p>Hjälp andra att också komma igång genom att publicera dina tips. </p>
 
                     <a href="/publicera">Läs mer</a>
 
                 </section>
                 <section>
 
-                    <img src="imgs/5a461410d099a2ad03f9c998.png" alt="">
+                    <img src="../imgs/question-sign.png" alt="">
 
                     <h2>Synpunkter på sidan?</h2>
 
-                    <p>Om du har synpunkter eller frågor om sidan kan du fylla i formuläret <a href="kontaktIndex.php">här.</a></p>
+                    <p>Om du har synpunkter eller frågor om sidan kan du fylla i formuläret på kontaktsidan.</p>
 
                     <a href="/kontakt">Läs mer</a>
 

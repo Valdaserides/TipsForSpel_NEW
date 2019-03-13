@@ -250,9 +250,9 @@
                     <p class="pBoxes">Ditt namn*:</p><input type="text" name="publicerare" class="boxes" required><br>
 
                     <ul class="spel-selector">
-                        <li class="spel-selector-li"><img src="imgs/wowlogo.png" alt=""> <input type="radio" name="kategori" value="1" required></li>
-                        <li class="spel-selector-li"><img src="imgs/lollogo.png" alt=""> <input type="radio" name="kategori" value="2" required></li>
-                        <li class="spel-selector-li"><img src="imgs/csgologo.png" alt=""> <input type="radio" name="kategori" value="3" required></li>
+                        <li class="spel-selector-li">WoW <input type="radio" name="kategori" value="1" required></li>
+                        <li class="spel-selector-li">LoL <input type="radio" name="kategori" value="2" required></li>
+                        <li class="spel-selector-li">CSGO <input type="radio" name="kategori" value="3" required></li>
                     </ul>
 
                     <p class="pBoxes"> Titel*: </p><input type="text" name="titel" class="boxes" required><br>

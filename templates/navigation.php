@@ -482,5 +482,8 @@
             });
 
         }
+        
+        document.getElementById("test");
+        $("#test");
 
     </script>

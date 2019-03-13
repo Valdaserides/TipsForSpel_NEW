@@ -387,18 +387,18 @@
 
                 <li><a href="">hem</a></li>
                 <div id="dropdown">
-                    <li><a id="dropbtn" href="speltipsIndex.php">Speltips</a></li>
+                    <li><a id="dropbtn" href="../speltips/">Speltips</a></li>
                     <ul id="dropdown-content">
 
-                        <li><a href="../csgo/index.php">CS:GO Speltips</a></li>
-                        <li><a href="wowIndex.php">WoW Speltips</a></li>
-                        <li><a href="lolIndex.php">LoL Speltips</a></li>
+                        <li><a href="../csgo/">CS:GO Speltips</a></li>
+                        <li><a href="../wow/">WoW Speltips</a></li>
+                        <li><a href="../lol/">LoL Speltips</a></li>
 
                     </ul>
                 </div>
 
                 <li><a href="/TipsForSpel_NEW/publicera">Publicera speltips</a></li>
-                <li><a href="kontaktIndex.php" class="kontakt">Kontakt</a></li>
+                <li><a href="../kontakt/" class="kontakt">Kontakt</a></li>
 
             </ul>
 

@@ -3,7 +3,7 @@
 include('session.php');
 
 if(!isset($_SESSION['login_user'])){
-    header("Location: /admin");
+    header("Location: admin/index.php");
 }
 
 include_once("../dbConnect.php");
@@ -16,7 +16,7 @@ if(isset($_GET['acc'])){
     
     if(mysqli_query($dbc,$query)){
         echo "ACCEPTERAD";
-        echo "<a href='../adminView.php'> tillbaka </a>";
+        echo "<a href='/admin'> tillbaka </a>";
     }
     else{
         echo $query;

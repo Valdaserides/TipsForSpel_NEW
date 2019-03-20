@@ -35,6 +35,7 @@
         justify-content: center;
         flex-wrap: wrap;
         padding-top: 30px;
+        margin-bottom: 30px;
         
     }
     
@@ -98,6 +99,19 @@
         text-decoration: none;
         
     }
+    
+    .below-content{
+        
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #adbce6;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        
+    }
 
     @media only screen and (max-width: 692px){
         
@@ -111,8 +125,10 @@
     }
     
     footer a img{
+        
         height:20px;
         width:20px;
+        
     }
 
 </style>
@@ -146,9 +162,12 @@
    
     </div>
     
-    <p> <i> Copyright &copy; Tips För Spel </i> </p>
-    <div>Ikoner gjorda av <a href="https://www.freepik.com/" title="Freepik">Freepik</a> och hämtade <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> licensierad av <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    <a href="../admin/"> <img src="http://simpleicon.com/wp-content/uploads/user1.png"> </a> 
-    
+    <div class="below-content">
+       
+        <p> <i> Copyright &copy; Tips För Spel </i> </p>
+        <div>Ikoner gjorda av <a href="https://www.freepik.com/" title="Freepik">Freepik</a> och hämtade <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> licensierad av <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <a href="../admin/"> <img src="http://simpleicon.com/wp-content/uploads/user1.png"> </a> 
+        
+    </div>
     
 </footer>

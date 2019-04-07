@@ -363,13 +363,27 @@
 
             }
 
-            $query = "INSERT INTO speltips_alla (speltips_alla_img_name,speltips_alla_publicerare,speltips_alla_spel,speltips_alla_titel,speltips_alla_text,speltips_alla_confirmed) VALUES ('$img','$publicerare','$spel','$titel','$tips',0);";
+            //$query = "INSERT INTO speltips_alla (speltips_alla_img_name,speltips_alla_publicerare,speltips_alla_spel,speltips_alla_titel,speltips_alla_text,speltips_alla_confirmed) VALUES ('$img','$publicerare','$spel','$titel','$tips',0);";
 
-            if(mysqli_query($dbc,$query)){
+            $query = "INSERT INTO speltips_alla (speltips_alla_img_name,speltips_alla_publicerare,speltips_alla_spel,speltips_alla_titel,speltips_alla_text,speltips_alla_confirmed) VALUES (?,?,?,?,?,0);";
+            
+            $stmt = $dbc->prepare($query);
+            $stmt->bind_param("sssss",$img,$publicerare,$spel,$titel,$tips);
+            $stmt->execute();
+            $stmt->bind_result($img,$publicerare,$spel,$titel,$tips);
+            $stmt->store_result();
+            
+            /*if(mysqli_query($dbc,$query)){
                 
                 mysqli_query($dbc,"SET NAMES UTF-8");
                 echo "<script> document.getElementById('success').style.display = 'block'; </script>";
 
+            }*/
+            
+            if($stmt->execute() === TRUE){
+                
+                echo "<script> document.getElementById('success').style.display = 'block'; </script>";
+                
             }
 
             else{
@@ -377,6 +391,7 @@
                 echo "<script> document.getElementById('fail').style.display = 'block'; </script>";
 
             }
+            mysqli_close($dbc);
             
         }
         

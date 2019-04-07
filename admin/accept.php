@@ -16,7 +16,7 @@ if(isset($_GET['acc'])){
     
     if(mysqli_query($dbc,$query)){
         echo "ACCEPTERAD";
-        echo "<a href='/admin'> tillbaka </a>";
+        echo "<a href='adminView.php'> tillbaka </a>";
     }
     else{
         echo $query;

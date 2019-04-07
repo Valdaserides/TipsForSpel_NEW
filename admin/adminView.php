@@ -95,8 +95,7 @@ require('../dbConnect.php');
         <a href="logout.php" style=""> Logga ut </a><br>
         <a href="register.php"> Skapa nytt admin konto </a>
             <div id="one">
-               <h1>VÄNTANDE</h1><br>
-                
+               <h1>VÄNTANDE</h1>
                 <div class="all-tips">
 
                 <?php

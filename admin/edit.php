@@ -49,7 +49,9 @@ else{
        
        Spel: <input name="spel" type="text" value="<?php echo $spel; ?>"> <br>
        
-       Text: <input type="text" value="<?php echo $text; ?>" name="text"><br>
+       
+       
+       Text: <textarea name="text" id="" cols="30" rows="10"><?php echo $text; ?></textarea>
        
        <input type="submit" value="Uppdatera">
        

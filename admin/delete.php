@@ -15,7 +15,7 @@ if(isset($_GET['del'])){
     
     if(mysqli_query($dbc,$query)){
         echo "<h1> BORTTAGEN </h1>";
-        echo "<a href='/admin'> tillbaka </a>";
+        echo "<a href='adminView.php'> tillbaka </a>";
     }
     
 }

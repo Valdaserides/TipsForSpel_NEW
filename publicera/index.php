@@ -369,9 +369,14 @@
             
             $stmt = $dbc->prepare($query);
             $stmt->bind_param("sssss",$img,$publicerare,$spel,$titel,$tips);
-            $stmt->execute();
             $stmt->bind_result($img,$publicerare,$spel,$titel,$tips);
             $stmt->store_result();
+            
+            if($stmt->execute() === TRUE){
+                
+                echo "<script> document.getElementById('success').style.display = 'block'; </script>";
+                
+            }
             
             /*if(mysqli_query($dbc,$query)){
                 
@@ -380,11 +385,7 @@
 
             }*/
             
-            if($stmt->execute() === TRUE){
-                
-                echo "<script> document.getElementById('success').style.display = 'block'; </script>";
-                
-            }
+            
 
             else{
                 

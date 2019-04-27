@@ -4,7 +4,7 @@ session_start();
 
 if(session_destroy()){
     
-    header("Location: /admin");
+    header("Location: ../admin");
     
 }
 

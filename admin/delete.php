@@ -14,8 +14,7 @@ if(isset($_GET['del'])){
     $query = "DELETE FROM speltips_alla WHERE speltips_alla_id=$id";
     
     if(mysqli_query($dbc,$query)){
-        echo "<h1> BORTTAGEN </h1>";
-        echo "<a href='adminView.php'> tillbaka </a>";
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
     }
     
 }

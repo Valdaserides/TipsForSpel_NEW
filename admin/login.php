@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
 	if($stmt->fetch()){
 	    
 	    $_SESSION['login_user'] = $username;
-	    header("Location: adminView.php");
+	    header("Location: waiting.php");
 	    
 	}
 	else{

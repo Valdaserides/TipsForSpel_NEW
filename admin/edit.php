@@ -8,7 +8,7 @@ require("../dbConnect.php");
 
 if(!isset($_GET['id']) && !isset($_GET['titel']) && !isset($_GET['publ']) && !isset($_GET['spel']) && !isset($_GET['text'])){
     
-    header("Location: adminView.php");
+    header("Location: waiting.php");
 
 }
 
@@ -21,7 +21,6 @@ else{
     $text = $_GET['text'];
     $img = $_GET['img'];
     
-    
 }
 
 ?>
@@ -33,8 +32,7 @@ else{
     <title>Document</title>
 </head>
 <body>
-   
-   <a href="adminView.php"> Tillbaka </a>
+   <a href='javascript:history.go(-1)' id="first">&laquo; Tillbaka</a>
    <h1>Redigera speltips</h1>
    
     <form action="" method="post">
@@ -111,8 +109,9 @@ else{
         
         if(mysqli_query($dbc,$query)){
             
-            echo "Speltipset har uppdaterats!";
-            
+            echo "<script>document.getElementById('first').style.display = 'none'</script>";
+            echo "<h2>Tipsen har uppdaterats!</h2><br>";
+            echo "<a href='javascript:history.go(-2)'>&laquo; Tillbaka</a>";
         }
     
         else{

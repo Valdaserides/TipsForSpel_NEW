@@ -13,3 +13,12 @@ CREATE TABLE speltips_alla(
     speltips_alla_confirmed int(2)
 
 );
+
+CREATE TABLE admin(
+
+    admin_username varchar(32),
+    admin_password varchar(32)
+    
+);
+
+INSERT INTO admin (admin_username, admin_password) VALUES ("admin","admin");

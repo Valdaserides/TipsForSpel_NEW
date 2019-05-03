@@ -60,11 +60,11 @@
 
 }
 
-.tips-closed span {
+.tips-closed img {
 
     cursor: pointer;
     display: inline-block;
-    margin-bottom: 20px;
+    width:15px;
 
 }
 
@@ -267,7 +267,7 @@ input[type=submit]:hover,
 
     .tips-closed {
 
-        margin-top: -280px;
+        margin-top: -270px;
 
     }
 

@@ -141,13 +141,13 @@ mysqli_query($dbc,"SET NAMES UTF-8");
                         <p>Publicerare:
                             <?php echo $row['speltips_alla_publicerare']; ?>
                         </p>
-                        <p>Spel: <a href="<?php echo $row['speltips_alla_spel']; ?>Index.php">
+                        <p>Spel: <a href="../<?php echo $row['speltips_alla_spel']; ?>">
                                 <?php echo $row['speltips_alla_spel']; ?></a></p>
                     </div>
                 </a>
                 <div class="tips-closed tips-closed-<?php echo $arr[$n]; ?>">
 
-                    <div class="kryss"> <span onclick="hideTips(<?php echo $arr[$n]; ?>)">&#10006;</span> </div>
+                    <div class="kryss"><img src="../imgs/cross.png" onclick="hideTips(<?php echo $arr[$n]; ?>)"></div>
                     <h2>
                         <?php echo $row["speltips_alla_titel"]; ?>
                     </h2>

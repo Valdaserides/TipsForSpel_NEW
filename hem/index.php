@@ -42,7 +42,7 @@
             text-align: center;
             color: white;
             padding-top: 15vh;
-            font-size: 4em;
+            font-size: 3em;
             font-family: 'Karla';
 
         }
@@ -52,7 +52,7 @@
             text-align: center;
             color: white;
             font-family: 'Karla';
-            font-size: 2em;
+            font-size: 1.5em;
 
         }
 
@@ -140,12 +140,14 @@
         #sections section > a {
 
             background-color: green;
-            padding: 9px;
+            padding-bottom:10px;
+            padding-top:10px;
+            padding-left:8px;
+            padding-right:8px;
             text-decoration: none;
             color: white;
-            font-size: 20px;
+            font-size: 1em;
             border-radius: 30px;
-            transition: .2s ease-in-out;
 
         }
 
@@ -171,6 +173,7 @@
             font-family: 'Karla';
             padding-top: 20px;
             padding-bottom: 20px;
+            font-size:1.7em;
             
         }
         
@@ -270,7 +273,7 @@
                     <h2>Kom igång med ditt nya spel!</h2>
 
                     <p>Tips för spel riktar sig mot dig som är nybörjare.</p>
-                    <a href="/speltips">Läs mer</a>
+                    <a href="../speltips">Läs mer</a>
 
                 </section>
 
@@ -282,7 +285,7 @@
 
                     <p>För tillfället är det möjligt att se tips på tre spel; WoW, LoL och CSGO.</p>
 
-                    <a href="/speltips">Läs mer</a>
+                    <a href="../speltips">Läs mer</a>
 
                 </section>
                 <section>
@@ -293,7 +296,7 @@
 
                     <p>Hjälp andra att också komma igång genom att publicera dina tips. </p>
 
-                    <a href="/publicera">Läs mer</a>
+                    <a href="../publicera">Läs mer</a>
 
                 </section>
                 <section>
@@ -304,7 +307,7 @@
 
                     <p>Om du har synpunkter eller frågor om sidan kan du fylla i formuläret på kontaktsidan.</p>
 
-                    <a href="/kontakt">Läs mer</a>
+                    <a href="../kontakt">Läs mer</a>
 
                 </section>
 
@@ -347,7 +350,7 @@
                     <p>Publicerare:
                         <?php echo $row['speltips_alla_publicerare']; ?>
                     </p>
-                    <p>Spel: <a href="<?php echo $row['speltips_alla_spel']; ?>Index.php">
+                    <p>Spel: <a href="../<?php echo $row['speltips_alla_spel']; ?>">
                             <?php echo $row['speltips_alla_spel']; ?></a></p>
                 </div>
                 <div class="tips-closed tips-closed-<?php echo $arr[$n]; ?>"> 
@@ -364,7 +367,7 @@
                 } // Closing else
                 ?>
             </div>
-            <h3> Kolla ännu mer tips <a href="/speltips">här!</a> </h3>
+            <h3> Kolla ännu mer tips <a href="../speltips">här!</a> </h3>
         </div>
 
     </main>

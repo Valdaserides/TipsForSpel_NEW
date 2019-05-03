@@ -4,3 +4,9 @@
 [06-Mar-2019 12:51:53 UTC] PHP Warning:  include(templates/footer.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/kontakt/index.php on line 149
 [06-Mar-2019 12:51:53 UTC] PHP Warning:  include(templates/footer.php): failed to open stream: No such file or directory in /home/xanhhqjc/public_html/kontakt/index.php on line 149
 [06-Mar-2019 12:51:53 UTC] PHP Warning:  include(): Failed opening 'templates/footer.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/xanhhqjc/public_html/kontakt/index.php on line 149
+[14-Apr-2019 11:26:39 UTC] PHP Warning:  utf8_decode() expects exactly 1 parameter, 4 given in /home/xanhhqjc/public_html/kontakt/index.php on line 167
+[14-Apr-2019 11:26:39 UTC] PHP Warning:  utf8_decode() expects exactly 1 parameter, 2 given in /home/xanhhqjc/public_html/kontakt/index.php on line 172
+[19-Apr-2019 15:43:19 UTC] PHP Warning:  utf8_decode() expects exactly 1 parameter, 4 given in /home/xanhhqjc/public_html/kontakt/index.php on line 173
+[19-Apr-2019 15:43:19 UTC] PHP Warning:  utf8_decode() expects exactly 1 parameter, 2 given in /home/xanhhqjc/public_html/kontakt/index.php on line 178
+[19-Apr-2019 16:54:05 UTC] PHP Warning:  utf8_decode() expects exactly 1 parameter, 4 given in /home/xanhhqjc/public_html/kontakt/index.php on line 173
+[19-Apr-2019 16:54:05 UTC] PHP Warning:  utf8_decode() expects exactly 1 parameter, 2 given in /home/xanhhqjc/public_html/kontakt/index.php on line 178

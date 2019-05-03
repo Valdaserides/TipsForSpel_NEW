@@ -26,7 +26,6 @@ require('../dbConnect.php');
             height: auto;
             margin: auto;
             margin-left: 250px;
-            border-right: 1px solid;
 
         }
         
@@ -80,7 +79,7 @@ require('../dbConnect.php');
 
 
 
-        <h1>Nuvarande</h1>
+        <h1>Nuvarande speltips</h1>
         <hr>
         <div class="all-tips">
 

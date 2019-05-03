@@ -49,8 +49,8 @@
         .bar2,
         .bar3 {
 
-            width: 35px;
-            height: 5px;
+            width: 25px;
+            height: 3px;
             background-color: #000;
             margin: 6px 0;
             transition: 0.4s;
@@ -59,7 +59,7 @@
 
         .change .bar1 {
             -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-            transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-5px, 6px);
         }
 
         .change .bar2 {
@@ -133,7 +133,6 @@
             color: #000;
             text-transform: uppercase;
             font-family: 'Karla', sans-serif;
-            transition: .1s ease-in-out;
 
         }
 
@@ -260,14 +259,14 @@
 
             header nav .nav-menu li {
 
-                padding: 35px;
+                padding: 25px;
 
             }
 
             header nav .nav-menu li a,
             header nav #dropdown li a {
                 
-                font-size: 22px;
+                font-size: 16px;
                 
             }
 
@@ -385,7 +384,7 @@
 
             <ul class="nav-menu">
 
-                <li><a href="">hem</a></li>
+                <li><a href="../">hem</a></li>
                 <div id="dropdown">
                     <li><a id="dropbtn" href="../speltips/">Speltips</a></li>
                     <ul id="dropdown-content">
@@ -397,7 +396,7 @@
                     </ul>
                 </div>
 
-                <li><a href="/TipsForSpel_NEW/publicera">Publicera speltips</a></li>
+                <li><a href="../publicera">Publicera speltips</a></li>
                 <li><a href="../kontakt/" class="kontakt">Kontakt</a></li>
 
             </ul>
@@ -460,7 +459,7 @@
             $(".nav-menu").fadeToggle();
 
         });
-
+        
         if ($(window).width() > 899) {
 
             $(window).on("scroll", function() {
@@ -485,5 +484,5 @@
         
         document.getElementById("test");
         $("#test");
-
+        
     </script>

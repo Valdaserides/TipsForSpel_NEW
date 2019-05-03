@@ -1,5 +1,1 @@
-<?php
-
-header("Location: hem/");
-
-?>
+<?php header("Location: hem"); ?>

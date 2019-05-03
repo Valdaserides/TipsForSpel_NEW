@@ -48,7 +48,13 @@
         .boxes{
             
             border-radius: 5px;
-            font-size: 1.1em;
+            font-size: .8em;
+            padding-top:5px;
+            padding-bottom:5px;
+            padding-left:7px;
+            padding-right:7px;
+            width: 50%;
+            margin:15px;
             
         }
         
@@ -70,7 +76,7 @@
             margin: auto;
             border-radius: 10px;
             background-color: grey;
-            padding-bottom: 15px;
+            padding-bottom: 25px;
 
         }
         
@@ -130,7 +136,7 @@
 
             <p> </p>
 
-            <form action="kontaktIndex.php" method="post">
+            <form action="" method="post">
 
                 <h3 id="mailSuccess"> Ditt mail har skickats. Förvänta svar inom kort. </h3>
                 <h3 id="mailFail"> Något gick fel. </h3>

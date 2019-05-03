@@ -13,7 +13,7 @@
         
         @import url('https://fonts.googleapis.com/css?family=Karla:700');
 
-        .main-content { 
+        .main-content {
 
             margin: auto;
             width: 1000px;
@@ -246,12 +246,13 @@
                 </div>
 
                 <div id="content">
-
+                   
+                    <input type="text" name="spamfilter" id="spamfilter" style="display:none;">
                     <p class="pBoxes">Ditt namn*:</p><input type="text" name="publicerare" class="boxes" required><br>
 
                     <ul class="spel-selector">
                         <li class="spel-selector-li"> <img src="../imgs/wowlogo.png" alt=""> WoW <input type="radio" name="kategori" value="1" required></li>
-                        <li class="spel-selector-li"> <img src="../imgs/lollogo.png" alt=""> LoL <input type="radio" name="kategori" value="2" required></li>
+                        <li class="spel-selector-li"> <img src="../imgs//lollogo.png" alt=""> LoL <input type="radio" name="kategori" value="2" required></li>
                         <li class="spel-selector-li"> <img src="../imgs/csgologo.png" alt=""> CSGO <input type="radio" name="kategori" value="3" required></li>
                     </ul>
 
@@ -264,7 +265,7 @@
                     <input type="file" name="uploaded_file" id="file-upload">
 
                     <input type="submit" value="Publicera" class="submit" name="submit">
-
+                    
                 </div>
 
             </form>
@@ -293,7 +294,9 @@
 
     require("../dbConnect.php");
 
-    if(isset($_POST['publicerare']) && isset($_POST['kategori']) && isset($_POST['titel']) && isset($_POST['text']) && isset($_POST['submit'])){ // Checking so all the form inputs has been set.
+    
+
+    if(isset($_POST['publicerare']) && isset($_POST['kategori']) && isset($_POST['titel']) && isset($_POST['text']) && isset($_POST['submit']) && empty($_POST['spamfilter'])){ // Checking so all the form inputs has been set.
         
         $publicerare = $_POST['publicerare']; // Taking all the data of the input-tags and putting it into a variabel.
         $kategori = $_POST['kategori'];
@@ -343,7 +346,7 @@
 
                 $kategoriVariabel = "speltips_wow"; // the category variabel is set to the speltips_wow table in the database.
                 
-                $spel = "WoW";
+                $spel = "wow";
 
             }
 
@@ -351,7 +354,7 @@
 
                 $kategoriVariabel = "speltips_lol";
                 
-                $spel = "LoL";
+                $spel = "lol";
 
             }
 
@@ -359,7 +362,7 @@
 
                 $kategoriVariabel = "speltips_csgo";
                 
-                $spel = "CSGO";
+                $spel = "csgo";
 
             }
 

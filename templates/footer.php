@@ -13,7 +13,7 @@
         font-family: 'Karla';
         width: 100%;
         height: auto;
-        background-color: lightblue;
+        background-color: #adbce6;
         text-align:center;
 
     }
@@ -59,9 +59,9 @@
         
     }
     
-    footer #info h2 i {
+    footer #info h2 {
         
-        font-size: .8em;
+        font-size: .9em;
         color: black;
         
     }
@@ -84,19 +84,21 @@
     
     footer nav ul li{
         
-        padding: 10px;
+        padding: 5px;
         
     }
     
     footer nav ul li a{
         
         color: black;
+        font-size:.8em;
+        text-decoration:none;
         
     }
     
     footer nav ul li a:hover{
         
-        text-decoration: none;
+        opacity:.5;
         
     }
     
@@ -110,6 +112,22 @@
         justify-content: center;
         flex-wrap: wrap;
         
+    }
+    
+    .below-content p{
+        opacity:.8;
+        font-size:.8em;
+    }
+    
+    .below-content > div{
+        
+        font-size: .7em;
+        
+    }
+    
+    .below-content i{
+        
+        
         
     }
 
@@ -121,7 +139,13 @@
             border-bottom: 1px solid;
             margin-bottom: 50px;
         }
-
+        
+        footer nav ul{
+        
+            margin-top:-25px;
+            
+        }
+        
     }
     
     footer a img{
@@ -141,7 +165,7 @@
 
            <h2><i>Tips för spel är för dig som precis börjat spela ett spel och villa ha snabba tips för att komma igång!</i></h2>
             
-            <h3> Problem eller synpunkter med sidan? Kontakta admin <a href="kontaktIndex.php">här</a>. </h3>
+            <h2 style="margin-top:50px;"> Problem eller synpunkter med sidan? Kontakta admin <a href="../kontakt">här</a>. </h2>
 
         </div>
 
@@ -165,8 +189,8 @@
     <div class="below-content">
        
         <p> <i> Copyright &copy; Tips För Spel </i> </p>
-        <div>Ikoner gjorda av <a href="https://www.freepik.com/" title="Freepik">Freepik</a> och hämtade <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> licensierad av <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-        <a href="../admin/"> <img src="http://simpleicon.com/wp-content/uploads/user1.png"> </a> 
+        <div>Ikoner gjorda av <a href="https://www.freepik.com/" title="Freepik">Freepik</a> och hämtade från <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> licensierad av <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <a href="../admin/" style="text-decoration:none;color:black;padding-top:15px;padding-bottom:15px;"> <i>Logga in</i> <img src="http://simpleicon.com/wp-content/uploads/user1.png"> </a> 
         
     </div>
     

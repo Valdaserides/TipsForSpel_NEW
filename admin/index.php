@@ -1,4 +1,4 @@
-    <?php
+<?php
 
 include("login.php");
 
@@ -23,7 +23,7 @@ if(isset($_SESSION['login_user'])){
             
             main{
                 
-                background-color:lightgreen;
+                background-color:lightblue;
                 width: 100%;
                 height:100vh;
                 display:flex;

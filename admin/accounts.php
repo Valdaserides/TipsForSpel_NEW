@@ -28,7 +28,6 @@ require('../dbConnect.php');
             height: auto;
             margin: auto;
             margin-left: 250px;
-            border-right: 1px solid;
 
         }
 

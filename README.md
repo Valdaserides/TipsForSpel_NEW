@@ -1,2 +1,2 @@
-# Mitt gymnasietarbete
-## Copyright 
+# Mitt gymnasiearbete
+#### © Copyright 
